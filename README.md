@@ -1,1 +1,0 @@
-# wkpalan.github.io
