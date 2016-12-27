@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+    <main class="mdl-layout__content">
+      <section>
+        <div class="page-content">
+          {{ content }}
+        </div>
+      </section>
+
+    </main>
+  {% include footer.html %}
+  </div>
+
+
+</body>
+</html>

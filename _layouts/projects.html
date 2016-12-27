@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<h1>Projects</h1>
+
+<div class="mdl-grid">
+  {% for project in site.categories.projects %}
+  <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title">
+      <h1 class="mdl-card__title-text">{{ project.title}}</h1>
+      <img src="{{ project.logo }}" />
+    </div>
+
+    <div class="mdl-card__media">
+      <img src="{{project.img}}"/>
+    </div>
+
+    <div class="mdl-card__supporting-text  mdl-card--expand">
+      {{ project.content }}
+    </div>
+
+
+    <div class="mdl-card__actions mdl-card--border">
+      {% if project.publication == "" %}
+        <a id="pinemap_pub" class="right-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored" disabled>
+          <i class="material-icons">description</i>
+        </a>
+        <div class="mdl-tooltip mdl-tooltip--large" for="pinemap_pub"> Publication</div>
+      {% else %}
+        <a id="pinemap_pub" class="right-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored" href="{{ project.publication }}" target="_blank">
+          <i class="material-icons">description</i>
+        </a>
+        <div class="mdl-tooltip mdl-tooltip--large" for="pinemap_pub"> Publication</div>
+      {% endif %}
+        {% if project.link == "" %}
+          <button id="pinemap_link" class="right-btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored" disabled >
+            <i class="material-icons">launch</i>
+          </button>
+          <div class="mdl-tooltip mdl-tooltip--large" for="pinemap_link"> Website </div>
+        {% else %}
+          <a id="pinemap_link" class="right-btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored" target="_blank" href="{{project.link}}">
+            <i class="material-icons">launch</i>
+          </a>
+          <div class="mdl-tooltip mdl-tooltip--large" for="pinemap_link"> Website </div>
+        {% endif %}
+
+
+    </div>
+  </div>
+  {% endfor %}
+</div>

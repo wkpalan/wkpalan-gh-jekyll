@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Fastq Quality Chart"
+date:   2016-5-25
+categories: blogs
+tags: [fastq, quality value, plots]
+---
+
+
+  <p style="height:0;">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript"
+            src="https://www.google.com/jsapi?autoload={
+              'modules':[{
+                'name':'visualization',
+                'version':'1',
+                'packages':['corechart']
+              }]
+            }"></script>
+  <script src="/scripts/fastq_quality.js"></script>
+  <p>
+  <div style="float:left">
+  <form><label for="fastq_txt"> Input text</label>
+  <pre><textarea id="fastq_txt" cols="50" rows="5">
+  @SRR764595.11/2
+  TTGATTGAGGTGTGCGGGTATATGCCGNAATGTGGTTATACTCGCGACGAAGAAAAGATGTATGTATTGTGTAACCC
+  +
+  `ac`be[egfYJ``^eef^ced`_adaBOWccVacce\\WaabbUZa^`RW^WRGXT[_bZZZ`Z__b[bb[__]]`
+  </textarea></pre>
+  <button id="draw_plot_btn" type="button">Draw Plot</button>
+  <label for="ascii_code"> ASCII Codes</label>
+  <pre><textarea id="ascii_code" cols="50" rows="5" readonly></textarea></pre>
+  </form>
+  </div>
+  <div id="chart_div" style="float:right;"></div>
