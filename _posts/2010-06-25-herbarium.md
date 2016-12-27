@@ -10,4 +10,4 @@ publication: ""
 link: "http://herbarium.muohio.edu"
 ---
 
-Comparative genetic maps are used in examination of genome organization, detection of conserved gene order, and exploration of marker order variations. YouGenMap is an open-source web tool that offers dynamic comparative mapping capability of users' own genetic mapping between 2 or more map sets.
+Website development for the Willard Sherman Turrell Herbarium at Miami University of Ohio. The herbarium has an extensive collection of materials from diverse number of plant species.
