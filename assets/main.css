@@ -59,7 +59,7 @@ div.mdl-card__title > img{
   height:50px;
 }
 
-.subheader{
+.subheader{8
   color: white;
   background: rgb(96,125,139);
   margin: 0px 20px ;
@@ -85,6 +85,8 @@ div.mdl-card__title > img{
 }
 
 .pub_year{
+  color:white;
+  font-weight: bolder;
   text-align: center;
   background: rgb(96,125,139);
 }
@@ -97,4 +99,8 @@ div.mdl-card__title > img{
 
 .abstract-dialog{
   width:90%;
+}
+
+.pub_details{
+  margin:20px;
 }

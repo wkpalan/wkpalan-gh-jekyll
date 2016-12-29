@@ -13,7 +13,7 @@ layout: default
   {% if pub_year == year %}
   {% for article in site.data.abstracts.articles %}
   {% if article[0] == pub_date[1] %}
-  <div class="mdl-cell mdl-cell--8-col mdl-cell--4-col-phone mdl-shadow--2dp">
+  <div class="mdl-cell mdl-cell--10-col mdl-cell--4-col-phone pub_details">
     <div class="pub_title">
       <a  tooltip="{{article[1].title}}" class = 'dialog-link-{{pub_date[1]}}'>{{article[1].title}}</a>
     </div>
@@ -29,9 +29,9 @@ layout: default
       {{pub_author}},
       {% endif %}
       {% endfor %}
-    </div>[0]
+    </div>
   </div>
-  <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--4-col mdl-cell--middle pub_link mdl-cell--stretch">
+  <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--4-col mdl-cell--middle pub_link mdl-cell--stretch">
     <a id="{{pub_date[1]}}_link" class="right-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored"
     href="http://www.ncbi.nlm.nih.gov/pubmed?term={{pub_date[1]}}" target="_blank">
     <i class="material-icons">description</i>
