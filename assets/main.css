@@ -69,3 +69,32 @@ div.mdl-card__title > img{
   position:absolute;
   right:10px;
 }
+
+.bold_author{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.pub-list{
+  margin:20px 20px;
+}
+
+.pub_title{
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.pub_year{
+  text-align: center;
+  background: rgb(96,125,139);
+}
+.pub_link{
+    text-align: center;
+}
+.authors{
+  font-size:12pt;
+}
+
+.abstract-dialog{
+  width:90%;
+}

@@ -26,9 +26,15 @@ github_username:  wkpalan
 
 # Build settings
 markdown: kramdown
-theme: gokool
+#theme: gokool
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+
+jekyll_get:
+  - data: publications
+#    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26432828'
+    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Vollbrecht E&format=json'
+#    cache: true
