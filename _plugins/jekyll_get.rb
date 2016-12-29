@@ -1,7 +1,6 @@
 require 'json'
 require 'hash-joiner'
 require 'open-uri'
-require 'nokogiri'
 require 'crack'
 require 'pp'
 

@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     gokool (0.1.0)
+      crack (~> 0.4.3)
+      hash-joiner (~> 0.0.7)
       jekyll (~> 3.3)
 
 GEM
@@ -37,9 +39,6 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
-    mini_portile2 (2.1.0)
-    nokogiri (1.7.0)
-      mini_portile2 (~> 2.1.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.4)
@@ -59,7 +58,6 @@ DEPENDENCIES
   crack (~> 0.4.3)
   gokool!
   hash-joiner (~> 0.0.7)
-  nokogiri (~> 1.7.0)
   rake (~> 10.0)
 
 BUNDLED WITH
