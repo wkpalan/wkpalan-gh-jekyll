@@ -39,4 +39,4 @@ exclude:
 #    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Wimalanathan K&format=json'
 jekyll_pubmed:
   - data: "publications"
-    term: "Wimalanathan K"
+    term: "Vollbrecht E"
