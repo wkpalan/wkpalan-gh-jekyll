@@ -86,6 +86,7 @@ module Jekyll_Get
       sorted_years = years.uniq.sort.reverse.to_a
       #return doc["PubmedArticleSet"]
       out_hash =  {"pmids" => sorted_pmid, "articles" => h, "years" => sorted_years}
+      pp out_hash
       return out_hash
     end
   end
