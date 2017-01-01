@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
+<link href="http://0.0.0.0:4001/feed.xml" rel="self" type="application/atom+xml" />
+<link href="http://0.0.0.0:4001/" rel="alternate" type="text/html" />
+<updated>2017-01-01T01:50:05-06:00</updated>
+<id>http://0.0.0.0:4001/</id>
+<subtitle>A jekyll theme based for an academic focused personal site.
+</subtitle>
+<entry>
+<title>PineMap</title>
+<link href="http://0.0.0.0:4001/projects/miami/2016/12/25/pinemap.html" rel="alternate" type="text/html" title="PineMap" />
+<published>2016-12-25T00:00:00-06:00</published>
+<updated>2016-12-25T00:00:00-06:00</updated>
+<id>http://0.0.0.0:4001/projects/miami/2016/12/25/pinemap</id>
+<content type="html" xml:base="http://0.0.0.0:4001/projects/miami/2016/12/25/pinemap.html">&lt;p&gt;A collaborative project to implement &lt;a href=&quot;http://gmod.org/wiki/CMap&quot;&gt;CMap&lt;/a&gt; for &lt;i&gt;Pinus taeda&lt;/i&gt; genetic maps.
+The generic mapping data generated for &lt;i&gt;P. taeda&lt;/i&gt;, before the genome sequence was not available for public consumption.
+We used the open source genetic map visualization tool CMap from GMOD, and enabled public visualization of the dataset.
+This effort included heavy customization of the CMap code to be able to generate search functions.&lt;/p&gt;
+</content>
+<category term="Genetic Maps" />
+<category term="GMOD" />
+<category term="CMap" />
+<category term="Web Dev" />
+<summary>A collaborative project to implement CMap for Pinus taeda genetic maps.The generic mapping data generated for P. taeda, before the genome sequence was not available for public consumption.We used the open source genetic map visualization tool CMap from GMOD, and enabled public visualization of the dataset.This effort included heavy customization of the CMap code to be able to generate search functions.</summary>
+</entry>
+<entry>
+<title>Fastq Quality Chart</title>
+<link href="http://0.0.0.0:4001/blogs/2016/05/25/fastq-quality-chart.html" rel="alternate" type="text/html" title="Fastq Quality Chart" />
+<published>2016-05-25T00:00:00-05:00</published>
+<updated>2016-05-25T00:00:00-05:00</updated>
+<id>http://0.0.0.0:4001/blogs/2016/05/25/fastq-quality-chart</id>
+<content type="html" xml:base="http://0.0.0.0:4001/blogs/2016/05/25/fastq-quality-chart.html">&lt;p style=&quot;height:0;&quot;&gt;
+  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;https://www.google.com/jsapi?autoload={
+              'modules':[{
+                'name':'visualization',
+                'version':'1',
+                'packages':['corechart']
+              }]
+            }&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/scripts/fastq_quality.js&quot;&gt;&lt;/script&gt;
+  &lt;p&gt;
+  &lt;div style=&quot;float:left&quot;&gt;
+  &lt;form&gt;&lt;label for=&quot;fastq_txt&quot;&gt; Input text&lt;/label&gt;
+  &lt;pre&gt;&lt;textarea id=&quot;fastq_txt&quot; cols=&quot;50&quot; rows=&quot;5&quot;&gt;
+  @SRR764595.11/2
+  TTGATTGAGGTGTGCGGGTATATGCCGNAATGTGGTTATACTCGCGACGAAGAAAAGATGTATGTATTGTGTAACCC
+  +
+  `ac`be[egfYJ``^eef^ced`_adaBOWccVacce\\WaabbUZa^`RW^WRGXT[_bZZZ`Z__b[bb[__]]`
+  &lt;/textarea&gt;&lt;/pre&gt;
+  &lt;button id=&quot;draw_plot_btn&quot; type=&quot;button&quot;&gt;Draw Plot&lt;/button&gt;
+  &lt;label for=&quot;ascii_code&quot;&gt; ASCII Codes&lt;/label&gt;
+  &lt;pre&gt;&lt;textarea id=&quot;ascii_code&quot; cols=&quot;50&quot; rows=&quot;5&quot; readonly=&quot;&quot;&gt;&lt;/textarea&gt;&lt;/pre&gt;
+  &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;chart_div&quot; style=&quot;float:right;&quot;&gt;&lt;/div&gt;
+&lt;/p&gt;&lt;/p&gt;
+</content>
+<category term="fastq" />
+<category term="quality value" />
+<category term="plots" />
+<summary>             Input text    @SRR764595.11/2  TTGATTGAGGTGTGCGGGTATATGCCGNAATGTGGTTATACTCGCGACGAAGAAAAGATGTATGTATTGTGTAACCC  +  `ac`be[egfYJ``^eef^ced`_adaBOWccVacce\\WaabbUZa^`RW^WRGXT[_bZZZ`Z__b[bb[__]]`    Draw Plot   ASCII Codes        </summary>
+</entry>
+<entry>
+<title>YouGenMap</title>
+<link href="http://0.0.0.0:4001/projects/miami/2014/06/24/yougenmap.html" rel="alternate" type="text/html" title="YouGenMap" />
+<published>2014-06-24T00:00:00-05:00</published>
+<updated>2014-06-24T00:00:00-05:00</updated>
+<id>http://0.0.0.0:4001/projects/miami/2014/06/24/yougenmap</id>
+<content type="html" xml:base="http://0.0.0.0:4001/projects/miami/2014/06/24/yougenmap.html">&lt;p&gt;Comparative genetic maps are used in examination of genome organization, detection of conserved gene order, and exploration of marker order variations. YouGenMap is an open-source web tool that offers dynamic comparative mapping capability of users’ own genetic mapping between 2 or more map sets.&lt;/p&gt;
+</content>
+<category term="Genetic Maps" />
+<category term="GMOD" />
+<category term="CMap" />
+<category term="Web Dev" />
+<summary>Comparative genetic maps are used in examination of genome organization, detection of conserved gene order, and exploration of marker order variations. YouGenMap is an open-source web tool that offers dynamic comparative mapping capability of users’ own genetic mapping between 2 or more map sets.</summary>
+</entry>
+<entry>
+<title>Herbarium</title>
+<link href="http://0.0.0.0:4001/projects/miami/2014/06/24/herbarium.html" rel="alternate" type="text/html" title="Herbarium" />
+<published>2014-06-24T00:00:00-05:00</published>
+<updated>2014-06-24T00:00:00-05:00</updated>
+<id>http://0.0.0.0:4001/projects/miami/2014/06/24/herbarium</id>
+<content type="html" xml:base="http://0.0.0.0:4001/projects/miami/2014/06/24/herbarium.html">&lt;p&gt;Website development for the Willard Sherman Turrell Herbarium at Miami University of Ohio. The herbarium has an extensive collection of materials from diverse number of plant species.&lt;/p&gt;
+</content>
+<category term="Genetic Maps" />
+<category term="GMOD" />
+<category term="CMap" />
+<category term="Web Dev" />
+<summary>Website development for the Willard Sherman Turrell Herbarium at Miami University of Ohio. The herbarium has an extensive collection of materials from diverse number of plant species.</summary>
+</entry>
+</feed>

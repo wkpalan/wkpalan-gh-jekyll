@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <title>Fastq Quality Chart</title>
+  <meta name="description" content="Input text @SRR764595.11/2 TTGATTGAGGTGTGCGGGTATATGCCGNAATGTGGTTATACTCGCGACGAAGAAAAGATGTATGTATTGTGTAACCC + `ac`be[egfYJ``^eef^ced`_adaBOWccVacce\\WaabbUZa^`R...">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Fastq Quality Chart - gokool-jekyll-theme</title>
+<meta property="og:title" content="Fastq Quality Chart" />
+<meta name="description" content="Input text @SRR764595.11/2 TTGATTGAGGTGTGCGGGTATATGCCGNAATGTGGTTATACTCGCGACGAAGAAAAGATGTATGTATTGTGTAACCC + `ac`be[egfYJ``^eef^ced`_adaBOWccVacce\\WaabbUZa^`RW^WRGXT[_bZZZ`Z__b[bb[__]]` Draw Plot ASCII Codes" />
+<meta property="og:description" content="Input text @SRR764595.11/2 TTGATTGAGGTGTGCGGGTATATGCCGNAATGTGGTTATACTCGCGACGAAGAAAAGATGTATGTATTGTGTAACCC + `ac`be[egfYJ``^eef^ced`_adaBOWccVacce\\WaabbUZa^`RW^WRGXT[_bZZZ`Z__b[bb[__]]` Draw Plot ASCII Codes" />
+<link rel="canonical" href="http://0.0.0.0:4001/blogs/2016/05/25/fastq-quality-chart.html" />
+<meta property="og:url" content="http://0.0.0.0:4001/blogs/2016/05/25/fastq-quality-chart.html" />
+<meta property="og:site_name" content="gokool-jekyll-theme" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-05-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Fastq Quality Chart",
+"datePublished": "2016-05-25T00:00:00-05:00",
+"description": "Input text @SRR764595.11/2 TTGATTGAGGTGTGCGGGTATATGCCGNAATGTGGTTATACTCGCGACGAAGAAAAGATGTATGTATTGTGTAACCC + `ac`be[egfYJ``^eef^ced`_adaBOWccVacce\\\\WaabbUZa^`RW^WRGXT[_bZZZ`Z__b[bb[__]]` Draw Plot ASCII Codes",
+"url": "http://0.0.0.0:4001/blogs/2016/05/25/fastq-quality-chart.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+<div class="banner">
+  <div class="header-img">
+      <span class="main-title">Bioinformatics (Mis)adventures</span>
+      <br/>
+      <span class="sub-title">Regular Mishaps with Bioinformatics</span>
+    </div>
+  </div>
+  <div id="header" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <header class="mdl-layout__header ">
+    <div class="mdl-layout__header-row">
+
+      <nav class="mdl-navigation mdl-layout--large-screen-only mdl-js-ripple-effect">
+        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="/education/">Education</a>
+        <a class="mdl-navigation__link" href="/projects/">Projects</a>
+        <a class="mdl-navigation__link" href="/research/">Research</a>
+        <a class="mdl-navigation__link" href="">Tools</a>
+        <a class="mdl-navigation__link" href="">Posts</a>
+        <a class="mdl-navigation__link" href="/publications/">Publications</a>
+        <a class="mdl-navigation__link" href="">Contact</a>
+      </nav>
+
+
+      <div class="mdl-layout-spacer"></div>
+    </div>
+  </header>
+
+  <div class="mdl-layout__drawer">
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/">Home</a>
+      <a class="mdl-navigation__link" href="/education">Education</a>
+      <a class="mdl-navigation__link" href="/projects/">Projects</a>
+      <a class="mdl-navigation__link" href="/research/">Research</a>
+      <a class="mdl-navigation__link" href="">Tools</a>
+      <a class="mdl-navigation__link" href="">Posts</a>
+      <a class="mdl-navigation__link" href="/publications/">Publications</a>
+      <a class="mdl-navigation__link" href="">Contact</a>
+    </nav>
+  </div>
+
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <p style="height:0;">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript"
+            src="https://www.google.com/jsapi?autoload={
+              'modules':[{
+                'name':'visualization',
+                'version':'1',
+                'packages':['corechart']
+              }]
+            }"></script>
+  <script src="/scripts/fastq_quality.js"></script>
+  <p>
+  <div style="float:left">
+  <form><label for="fastq_txt"> Input text</label>
+  <pre><textarea id="fastq_txt" cols="50" rows="5">
+  @SRR764595.11/2
+  TTGATTGAGGTGTGCGGGTATATGCCGNAATGTGGTTATACTCGCGACGAAGAAAAGATGTATGTATTGTGTAACCC
+  +
+  `ac`be[egfYJ``^eef^ced`_adaBOWccVacce\\WaabbUZa^`RW^WRGXT[_bZZZ`Z__b[bb[__]]`
+  </textarea></pre>
+  <button id="draw_plot_btn" type="button">Draw Plot</button>
+  <label for="ascii_code"> ASCII Codes</label>
+  <pre><textarea id="ascii_code" cols="50" rows="5" readonly></textarea></pre>
+  </form>
+  </div>
+  <div id="chart_div" style="float:right;"></div>
+
+
+        </div>
+
+    </main>
+  <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>
+
+  </div>
+
+</div>
+
+</body>
+</html>
