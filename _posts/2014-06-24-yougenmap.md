@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  YouGenMap
 date:   2014-06-24
 categories: [projects, miami]

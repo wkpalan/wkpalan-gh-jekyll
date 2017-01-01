@@ -28,12 +28,15 @@ markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-pubmed
 exclude:
   - Gemfile
   - Gemfile.lock
-
-jekyll_get:
-  - data: publications
+  - vendor
+#jekyll_get:
+#  - data: publications
 #    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26432828'
-    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Wimalanathan K&format=json'
-#    cache: true
+#    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Wimalanathan K&format=json'
+jekyll_pubmed:
+  - data: "publications"
+    term: "Wimalanathan K"
