@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: gokool-jekyll-theme
+title: "Bioinformatics Misadventures"
 email: wkpalan@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
   A jekyll theme based for an academic focused personal site.
@@ -26,19 +26,23 @@ github_username:  wkpalan
 markdown: kramdown
 #theme: gokool
 gems:
-  - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-pubmed
+  - jekyll-seo-tag
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
   - README.md
   - LICENSE.txt
+  - '*gemspec'
+  - '*.sh'
+
+jekyll_pubmed:
+  - data: "publications"
+    term: "Wimalanathan K"
+
 #jekyll_get:
 #  - data: publications
 #    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26432828'
 #    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Wimalanathan K&format=json'
-jekyll_pubmed:
-  - data: "publications"
-    term: "Wimalanathan K"

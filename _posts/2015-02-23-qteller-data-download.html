@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "qTeller Data Download Tool"
+date:   2015-2-23
+categories: blogs
+summary: "A simple bookmarklet that lets you download the data for qTeller exoression graph"
+tags: [qTeller, FPKM, download data]
+---
+
+
+<p>
+<strong><a href="http://www.qteller.com/">qTeller</a></strong> maintained by <a href="http://nature.berkeley.edu/freelinglab/" title="Freeling Lab" target="">Freeling Lab</a> is an excellent resource to take a quick look at some of the public expression datasets available for some plant species. It hosts gene expression datasets for five plant species, namely <i>Arabidopsis</i>, rice, maize, <i>Sorghum</i>, and moss. I use this tool often to take a quick look at the exspression of a gene or a set of genes to confirm or clarify the expression patterns.
+</p>
+<p>
+Sometimes it is necessary to compare gene expression patterns of multiple genes, and there is no easy way to do that with qTeller. There is an option to download the gene expression data for the genes in a certain interval, but not all the genes I am interested in fall in the same interval. Sometimes the dataset I am interested in is not available to download with the interval tool. I have written a small <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a> bookmarklet to aid with downloading the raw data of the graphs in the <em>Visualize Gene Expression</em> tool in qTeller.
+</p>
+<p>
+A bookmarklet is a link which can be saved (dragged and dropped) on your bookmnarks bar (available in Chrome, Firefox, and Safari), and clikcing this bookmark allows you to run a JavaScript function on the page you are on. The data that is used to create the graphs are available on the page itself, and if you are computer savvy then you can parse out the data into csv form on your own. I merely present a more easier way to save the data into a Microsoft Excel or LibreOffice Calc compatible csv file. The downloaded file will contain the following columns, namely experiment,expression level,lower Limit of expression, and upper Limit of expression. These are values that are visible when you mouseover the graph on
+</p>
+<h4 style="padding:0; margin:0;">Given below in red is the link that you need to drag and drop onto the bookmarks bar.</h4>
+
+<a href="javascript: var x = document.getElementsByName('points');var x_list = String(x[0].innerHTML).split('\n');var re1 = /.*mouseover\(/;console.log(re1);var re2 = /\);.*/;var re3 = /\'/g;console.log(re2);for(var i=0;i<x_list.length;i++){    x_list[i]=x_list[i].replace(re1,'');    x_list[i]=x_list[i].replace(re2,'');    x_list[i]=x_list[i].replace(re3,'');    var tmp=x_list[i].split(',');    var removed = tmp.splice(1,2);    x_list[i]=tmp;}var data='Experiment,Expression,Lower Limit,Upper Limit\n';x_list.forEach(function(infoArray,index){    dataString = infoArray.join(',');    data += index < x_list.length ? dataString+ '\n' : dataString;});var pom = document.createElement('a');var csvContent=data;var blob = new Blob([csvContent],{type: 'text/csv;charset=utf-8;'});var url = URL.createObjectURL(blob);pom.href = url;var y = document.getElementById('datacontainer');var file_title = String(document.title).split(':')[1].toLowerCase();file_title += '_'+y.childNodes[21].innerHTML+'.csv';file_title = file_title.replace(' ','') ;pom.setAttribute('download', file_title);		document.body.appendChild(pom);		pom.click(); document.body.removeChild(pom);console.log(file_title);" title="Drag this onto your bookmarks toolbar to save the bookmarklet" style="padding:0; margin:0;">qTeller Data</a>
+
+<p>
+Once you navigate to the qTeller <i>Visualize Expression</i> page such as <a href="http://www.qteller.com/arabidopsis/bar_chart.php?name=AT5G14750&info=">this</a>, you can click on the bookmarklet to download the qTeller data as a csv file. The file name will be the species name foloowed by the current gene you have searched for and a csv extension. Which will look like <strong>arabidopsis_AT5G14750.csv</strong> for an example of <i>Arabidopsis</i> gene. You can search for a new gene and click the bookmarklet and it will download the data for the currently searched gene. I could easily convert this into a plugin, but that would not be universal and would require 3 different plugins for 3 different browsers, and maintaining those will not be worth the time.
+</p>
+<img style="border:medium solid;" src="/assets/imgs/bookmarklet.png" title="A screen capture to showing dragging and dropping the bookmarklet onto chrome"/>
+<p><strong>Note:- I have checked the bookmarklet in Chrome and Firefox and it works as intended. I will update about Safari as soon as I can access a mac</strong></p>
