@@ -16,18 +16,20 @@
 title: "Bioinformatics Misadventures"
 email: wkpalan@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-  A jekyll theme based for an academic focused personal site.
+    The personal website of Kokulapalan Wimalanathan
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wkpalan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gokool4bioinfo
 github_username:  wkpalan
 
 # Build settings
 markdown: kramdown
-#theme: gokool
-gems:
-  - jekyll-pubmed
+theme: gokool
+plugins:
   - jekyll-seo-tag
+  - jekyll-scholar
+  - jekyll-sitemap
+
 
 exclude:
   - Gemfile
@@ -37,6 +39,21 @@ exclude:
   - LICENSE.txt
   - '*gemspec'
   - '*.sh'
+
+scholar:
+  style: american-physics-society
+  sort_by: year, month
+  order: descending
+  group_by: year
+  group_order: descending
+  bibliography_template: bib
+  bibliography_group_tag: h3
+  bibliography_list_tag: 'div'
+  bibliography_list_attributes:
+     class: "pub-list"
+  bibliography_item_tag: 'div'
+  bibliography_item_attributes:
+     class: "mdl-cell mdl-cell--12-col pub-item"
 
 jekyll_pubmed:
   - data: "publications"

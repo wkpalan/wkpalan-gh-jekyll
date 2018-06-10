@@ -1,0 +1,59 @@
+---
+---
+
+
+		<a onclick="show_dialog(event)" id="link_{{entry.key}}" style="cursor: pointer;" title="Open the abstract" class="pub-title">
+			<strong class="pub_title">
+				{{entry.title}}
+			</strong>
+		</a><br/>
+		<div class="authors">
+			{% for author in entry.author_array %}
+				{% if author.first == "Kokulapalan" %}
+				<span class="bold_author">{{author.first | truncate: 1, ""}}. {{author.last}}</span>
+				{% else %}
+				<span>{{author.first| truncate: 1, ""}}. {{author.last}}{% if forloop.last %}.{% else %},{% endif %}</span>
+				{% endif %}
+			{% endfor %}
+
+			{{entry.journal}}.
+			({{entry.year}})
+			{% if entry.note %}
+				{{ entry.note }}
+			{% endif %}
+			{% if entry.doi %}
+				[<a target="_blank" href="{{entry.url}}">{{entry.doi}}</a>]
+			{% elsif entry.note != "In Press" %}
+				[<a target="_blank" href="{{entry.url}}">link</a>]
+			{% endif %}
+
+	</div>
+	<dialog class="mdl-dialog" style="width:80%" id="dialog_{{entry.key}}">
+		<h4 class="mdl-dialog__title">{{entry.title}}</h4>
+		<div class="mdl-dialog__content">
+			<p>
+				{{entry.abstract}}
+			</p>
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="mdl-button close"  id="close_{{entry.key}}">Close</button>
+		</div>
+	</dialog>
+<script>
+(function() {
+  var dialogButton = document.querySelector('#link_{{entry.key}}');
+	dialogButton.addEventListener('click', function() {
+    dialog.showModal();
+  });
+
+  var dialog = document.querySelector('#dialog_{{entry.key}}');
+  if (! dialog.showModal) {
+    dialogPolyfill.registerDialog(dialog);
+  }
+
+  dialog.querySelector('#close_{{entry.key}}')
+  .addEventListener('click', function() {
+    dialog.close();
+  });
+}());
+</script>

@@ -1,7 +1,11 @@
 ---
-layout: publications
+layout: default
 title: Publications
 permalink: /publications/
 ---
 
-# Page Under Construction
+# Publications
+
+<div class="mdl-grid">
+	{% bibliography %}
+</div>

@@ -3,47 +3,33 @@ layout: default
 ---
 <h1>Projects</h1>
 
-<div class="mdl-grid">
+<div class="mdl-grid ">
   {% for project in site.categories.projects %}
-  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-card mdl-shadow--4dp">
-    <div class="mdl-card__title">
-      <h1 class="mdl-card__title-text">{{ project.title}}</h1>
-      <img src="{{ project.logo }}" />
-    </div>
-
-    <div class="mdl-card__media">
-      <img src="{{project.img}}"/>
-    </div>
-
-    <div class="mdl-card__supporting-text  mdl-card--expand">
-      {{ project.content }}
-    </div>
-
-
-    <div class="mdl-card__actions mdl-card--border">
-      {% if project.publication == "" %}
-        <a id="pinemap_pub" class="right-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored" disabled>
-          <i class="material-icons">description</i>
-        </a>
-      {% else %}{{child.MedlineCitation.PMID}}
-        <a id="{{ project.title}}_pub" class="right-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored" href="{{ project.publication }}" target="_blank">
-          <i class="material-icons">description</i>
-        </a>
-      {% endif %}
-      <div class="mdl-tooltip mdl-tooltip--large" for="{{ project.title}}_pub"> Publication</div>
-        {% if project.link == "" %}
-          <button id="{{ project.title}}_link" class="right-btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored" disabled >
-            <i class="material-icons">launch</i>
-          </button>
-        {% else %}
-          <a id="{{ project.title}}_link" class="right-btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored" target="_blank" href="{{project.link}}">
-            <i class="material-icons">launch</i>
-          </a>
-        {% endif %}
-        <div class="mdl-tooltip mdl-tooltip--large" for="{{ project.title}}_link"> Website </div>
-
-
-    </div>
-  </div>
+		<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone projects mdl-shadow--2dp">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--6-col mdl-cell--2-col-tablet mdl-cell--2-col-phone project-title" >
+					<h3>
+					{{ project.title}}
+				</h3>
+			</div>
+			<div class="mdl-cell mdl-cell--6-col mdl-cell--2-col-tablet mdl-cell--2-col-phone project-logo" >
+				 <img src="{{ project.logo }}" />
+			</div>
+		</div>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet project-img" >
+					{% if project.link %}
+						<a href="{{ project.link }}" target="_blank">
+					{% endif %}
+							<img src="{{project.img}}"/>
+					{% if project.link %}
+				</a>
+					{% endif %}
+				</div>
+				<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet project-desc">
+						<div class="project-desc">{{ project.content }}</div>
+				</div>
+			</div>
+		</div>
   {% endfor %}
 </div>

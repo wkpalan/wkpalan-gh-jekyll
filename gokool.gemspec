@@ -21,5 +21,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "crack", "~> 0.4.3"
   spec.add_development_dependency 'jekyll-pubmed', '~> 0.1.2'
   spec.add_development_dependency "jekyll-seo-tag", "~> 2.1"
+  spec.add_development_dependency "jekyll-scholar"
+  spec.add_development_dependency "citeproc-ruby"
+  spec.add_development_dependency "csl-styles"
 
 end

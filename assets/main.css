@@ -1,50 +1,38 @@
-.banner{
-  /*background-image: url("/assets/header.png");*/
-  background: rgb(96,125,139);
-  color:white;
-  height:80px;
-  width:100%;
+.page-content{
+	max-width:768px;
+	margin-left: auto;
+  margin-right: auto;
+	overflow-x: auto;
+
 }
+
+.banner{
+  background-image: url("/assets/logos/circuit-pattern-blue.png");
+  height:80px;
+}
+
 .main-title{
-  top:20;
-  margin:20px 20px;
-  font-size:32pt;
+  margin:0px 20px;
+	/* pading: 10px 20px; */
+	color: #ffffff;
   font-weight: bolder;
-  line-height: normal;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .sub-title{
-  font-size:24px;
-  padding-left: 75px;
-  font-style: italic;
+	padding-left: 20%;
+	font-weight: bolder;
+  font-size:32px;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-/*@media (max-width: 512px)  and (min-resolution: 1.5dppx),
-       (max-width: 1024px) and (max-resolution: 1.5dppx) {
-         .main-title{
-           font-size: 24pt;
-         }
-         .sub-title{
-           font-style: italic;
-           font-size: 12pt;
-         }
-         .banner{
-           height:60px;
-           width:100%;
-         }
-       }
-
-
-.demo-layout-transparent .mdl-layout__header{
-  background: url('/assets/header.png') center / cover;
-
-  background: url('/assets/header.png') center / cover;
-
-  background: url('/assets/header.png') center / cover;
-  background: url('/assets/header.png') center / cover;
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+	.sub-title {
+    font-size: 18px;
+  }
 }
-}  color:white;
-  padding-left:20px;
-}*/
 
 div.mdl-card__media >  img{
   max-width:100%;
@@ -56,18 +44,7 @@ div.mdl-card__media >  img{
 div.mdl-card__title > img{
   position: absolute;
   right: 5px;
-  height:50px;
-}
-
-.subheader{8
-  color: white;
-  background: rgb(96,125,139);
-  margin: 0px 20px ;
-  padding: 0px 20px ;
-}
-.right-btn{
-  position:absolute;
-  right:10px;
+  height:30px;
 }
 
 .bold_author{
@@ -76,12 +53,18 @@ div.mdl-card__title > img{
 }
 
 .pub-list{
-  margin:20px 20px;
+	width:100%;
+	clear: both;
 }
 
 .pub_title{
-  font-size: 14pt;
+  font-size: 16pt;
   font-weight: bold;
+}
+
+.pub-item{
+
+	padding:10px;
 }
 
 .pub_year{
@@ -90,8 +73,9 @@ div.mdl-card__title > img{
   text-align: center;
   background: rgb(96,125,139);
 }
-.pub_link{
-    text-align: center;
+.pub-title{
+    /* color:#215b77; */
+		text-decoration: underline;
 }
 .authors{
   font-size:12pt;
@@ -103,4 +87,61 @@ div.mdl-card__title > img{
 
 .pub_details{
   margin:20px;
+	clear: both;
+}
+
+.fas-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.contact-btn{
+  width:70px;
+  height:70px;
+}
+.demo-list-three {
+  width: 650px;
+}
+
+.bibliography{
+	clear:both;
+}
+
+
+.projects{
+	padding:0px 15px;
+}
+
+.project-logo{
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+}
+.project-logo img{
+	display: block;
+  margin-left: auto;
+	height: 60px;
+}
+
+.project-desc p{
+	font-size: 14pt; !important
+}
+.project-img{
+	text-align: center;
+}
+.project-img img{
+	width:100%;
+	max-width: 300px;
+	max-hight: 300px;
+}
+
+.post-date{
+	text-align: right;
+}
+
+.post{
+	padding: 20px;
+	/* border: solid thin black; */
 }

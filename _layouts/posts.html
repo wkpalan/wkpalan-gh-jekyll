@@ -5,19 +5,21 @@ layout: default
 
 <div class="mdl-grid">
   {% for post in site.categories.blogs %}
-  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-card mdl-shadow--4dp">
-    <div class="mdl-card__title">
-      <h1 class="mdl-card__title-text"><a href="{{post.url}}">{{ post.title}}</a></h1>
-      <img src="{{ project.logo }}" />
+  <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone post mdl-shadow--2dp">
+		<h4>
+      <a href="{{post.url}}">
+				{{ post.title}}
+			</a>
+		</h4>
+
+    <div>
+      {{ post.description }}
+    </div>
+		<br/>
+		<div class="post-date mdl">
+      {{ post.date | date: '%B %d, %Y' }}
     </div>
 
-    <div class="mdl-card__media">
-      <img src="{{project.img}}"/>
-    </div>
-
-    <div class="mdl-card__supporting-text  mdl-card--expand">
-      {{ post.summary }}
-    </div>
   </div>
   {% endfor %}
 </div>

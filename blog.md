@@ -1,7 +1,7 @@
 ---
 layout: posts
-title: Posts
-permalink: /posts/
+title: Blog
+permalink: /blog/
 ---
 
 # Page Under Construction
