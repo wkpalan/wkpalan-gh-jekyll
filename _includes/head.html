@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }}{% endif %} - {{ site.title | escape }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% seo %}

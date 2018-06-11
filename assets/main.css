@@ -5,23 +5,35 @@
 	overflow-x: auto;
 
 }
-
-.banner{
-  background-image: url("/assets/logos/circuit-pattern-blue.png");
-  height:80px;
+.home-img{
+	text-align: center;
+	background-image: url("/assets/imgs/seamless-dna.png");
+	padding:20px;
+}
+.home-img > h1,h2{
+	color:#fff;
+	font-weight: bolder;
+	text-shadow: 	0 0 5px #3F51B5,
+								0 0 5px #3F51B5,
+								0 0 5px #3F51B5,
+								0 0 5px #3F51B5,
+								0 0 5px #3F51B5,
+								0 0 5px #3F51B5,
+								0 0 5px #3F51B5;
+}
+.home-text{
+	padding:30px;
+	text-align: center;
 }
 
 .main-title{
-  margin:0px 20px;
-	/* pading: 10px 20px; */
 	color: #ffffff;
   font-weight: bolder;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .sub-title{
-	padding-left: 20%;
+	/* padding-left: 20%; */
 	font-weight: bolder;
-  font-size:32px;
+  /* font-size:32px; */project-logo
 	color: #ffffff;
 	text-decoration: none;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -32,6 +44,12 @@
 	.sub-title {
     font-size: 18px;
   }
+	.home-img > h1{
+		font-size: 32px;
+	}
+	.home-img > h2{
+		font-size: 24px;
+	}
 }
 
 div.mdl-card__media >  img{
