@@ -11,10 +11,10 @@ title: Home
 	<div class="mdl-cell mdl-card mdl-cell--12-col mdl-cell--4-col-phone">
 		<div class="home-img">
 			<h1>{{site.title}}</h1>
-			<h2>My Regular Mishaps with bioinformatics</h2>
-		<!-- <img src="/assets/imgs/header.png"/> -->
 		</div>
+		<h4 class="sub-title">My Regular Mishaps with bioinformatics</h4>
 	</div>
+
 	<div class="mdl-cell mdl-card mdl-cell--12-col mdl-cell--4-col-phone home-text">
 		<p>
 		Welcome to Kokulapalan Wimalanathan’s Personal Website. I am a Doctoral Candidate in the Bioinformatics and Computational Biology Program at Iowa State University

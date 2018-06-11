@@ -12,17 +12,17 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
-  spec.add_dependency "jekyll", "~> 3.3"
+  spec.add_dependency "jekyll"
 
-  spec.add_development_dependency "bundler", "~> 1.12"
-  spec.add_development_dependency "github-pages"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "hash-joiner", "~> 0.0.7"
-  spec.add_development_dependency "crack", "~> 0.4.3"
-  spec.add_development_dependency 'jekyll-pubmed', '~> 0.1.2'
-  spec.add_development_dependency "jekyll-seo-tag", "~> 2.1"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "hash-joiner"
+  spec.add_development_dependency "crack"
+  spec.add_development_dependency "jekyll-seo-tag"
+  spec.add_development_dependency "jekyll-sitemap"
   spec.add_development_dependency "jekyll-scholar"
   spec.add_development_dependency "citeproc-ruby"
   spec.add_development_dependency "csl-styles"
 
+  Encoding.default_external = Encoding::UTF_8
 end
