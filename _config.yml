@@ -40,6 +40,7 @@ exclude:
   - '*gemspec'
   - '*.sh'
   - 'site'
+  - temp.html
 
 scholar:
   bibliography_template: bib

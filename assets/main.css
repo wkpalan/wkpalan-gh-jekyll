@@ -88,6 +88,7 @@ div.mdl-card__title > img{
 }
 
 .pub-list{
+	padding-left: 25px;
 	width:100%;
 	clear: both;
 }
@@ -98,6 +99,7 @@ div.mdl-card__title > img{
 }
 
 .pub-item, .pub_entry{
+	
 	padding-bottom:10px;
 }
 
@@ -175,4 +177,34 @@ div.mdl-card__title > img{
 .post{
 	padding: 20px;
 	/* border: solid thin black; */
+}
+
+div.vitae > h3{
+	font-weight: bold;
+	font-size: 18pt;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.vitae > div > h4{
+	font-size: 16pt;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.vitae > table {
+	font-size: 14pt;
+	padding-left: 25px;
+	width: 100%;
+	min-width: 110px;
+}
+
+div.vitae > table > tbody >  tr >  td {
+	min-width: 140px;
+	padding-bottom: 15px;
+}
+
+div.vitae > mdl-grid.div{
+	padding: 0px;
+	margin: 0px;
 }

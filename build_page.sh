@@ -1,3 +1,3 @@
 #bundle exec gem uninstall jekyll-pubmed
 #bundle install --path vendor/bundle
-bundle exec jekyll build --incremental
+bundle exec jekyll build
