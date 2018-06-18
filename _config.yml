@@ -39,21 +39,23 @@ exclude:
   - LICENSE.txt
   - '*gemspec'
   - '*.sh'
+  - 'site'
 
 scholar:
+  bibliography_template: bib
   style: american-physics-society
   sort_by: year, month
   order: descending
   group_by: year
   group_order: descending
   bibliography_template: bib
-  bibliography_group_tag: h3
+  bibliography_group_tag: h4
   bibliography_list_tag: 'div'
   bibliography_list_attributes:
-     class: "pub-list"
+    class: "pub-list"
   bibliography_item_tag: 'div'
-  bibliography_item_attributes:
-     class: "mdl-cell mdl-cell--12-col pub-item"
+  # bibliography_item_attributes:
+  #    class: "mdl-cell mdl-cell--12-col pub-item"
 
 jekyll_pubmed:
   - data: "publications"

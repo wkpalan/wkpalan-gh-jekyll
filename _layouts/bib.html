@@ -1,8 +1,7 @@
 ---
 ---
-
-
-		<a onclick="show_dialog(event)" id="link_{{entry.key}}" style="cursor: pointer;" title="Open the abstract" class="pub-title">
+<div class="pub_entry">
+		<a onclick="show_dialog(event)" id="link_{{entry.key}}" style="cursor: pointer;" title="Open the abstract" class="pub_title">
 			<strong class="pub_title">
 				{{entry.title}}
 			</strong>
@@ -10,24 +9,30 @@
 		<div class="authors">
 			{% for author in entry.author_array %}
 				{% if author.first == "Kokulapalan" %}
-				<span class="bold_author">{{author.first | truncate: 1, ""}}. {{author.last}}</span>
+				<span class="bold_author">{{author.first | truncate: 1, ""}}. {{author.last}},</span>
 				{% else %}
 				<span>{{author.first| truncate: 1, ""}}. {{author.last}}{% if forloop.last %}.{% else %},{% endif %}</span>
 				{% endif %}
 			{% endfor %}
-
-			{{entry.journal}}.
-			({{entry.year}})
-			{% if entry.note %}
-				{{ entry.note }}
+			{% if entry.howpublished %}
+				{{entry.howpublished}}
 			{% endif %}
+			{% if entry.journal %}
+				<i>{{ entry.journal }}</i>,
+			{% endif %}
+			({{entry.year}}).
+			{% if entry.note %}
+				<i>{{ entry.note }}</i>
+			{% endif %}
+			
 			{% if entry.doi %}
 				[<a target="_blank" href="{{entry.url}}">{{entry.doi}}</a>]
-			{% elsif entry.note != "In Press" %}
-				[<a target="_blank" href="{{entry.url}}">link</a>]
+			{% elsif entry.url %}
+				[<a target="_blank" href="{{entry.url}}">link</a>] 
 			{% endif %}
-
 	</div>
+
+	{% if entry.abstract %}
 	<dialog class="mdl-dialog" style="width:80%" id="dialog_{{entry.key}}">
 		<h4 class="mdl-dialog__title">{{entry.title}}</h4>
 		<div class="mdl-dialog__content">
@@ -57,3 +62,5 @@
   });
 }());
 </script>
+	{% endif %}
+</div>

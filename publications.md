@@ -4,8 +4,8 @@ title: Publications
 permalink: /publications/
 ---
 
-# Publications
+## Publications
 
 <div class="mdl-grid">
-	{% bibliography %}
+	{% bibliography --query @article|@mastersthesis|@unpublished %}
 </div>

@@ -93,13 +93,12 @@ div.mdl-card__title > img{
 }
 
 .pub_title{
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: bold;
 }
 
-.pub-item{
-
-	padding:10px;
+.pub-item, .pub_entry{
+	padding-bottom:10px;
 }
 
 .pub_year{
@@ -108,12 +107,9 @@ div.mdl-card__title > img{
   text-align: center;
   background: rgb(96,125,139);
 }
-.pub-title{
-    /* color:#215b77; */
-		text-decoration: underline;
-}
 .authors{
-  font-size:12pt;
+	font-size:12pt;
+	padding-bottom: 10px;
 }
 
 .abstract-dialog{
