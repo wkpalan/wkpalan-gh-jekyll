@@ -94,12 +94,12 @@ div.mdl-card__title > img{
 }
 
 .pub_title{
-  font-size: 14pt;
+  font-size: 12pt;
   font-weight: bold;
 }
 
 .pub-item, .pub_entry{
-	
+
 	padding-bottom:10px;
 }
 
@@ -186,6 +186,11 @@ div.vitae > h3{
 	margin: 0px;
 }
 
+div.vitae > h5{
+	padding-left: 10px;
+	margin: 0px;
+}
+
 div.vitae > div > h4{
 	font-size: 16pt;
 	padding: 0px;
@@ -193,15 +198,20 @@ div.vitae > div > h4{
 }
 
 div.vitae > table {
-	font-size: 14pt;
 	padding-left: 25px;
 	width: 100%;
 	min-width: 110px;
+	font-size: 12pt;
 }
 
-div.vitae > table > tbody >  tr >  td {
-	min-width: 140px;
+div.vitae > table > tbody >  tr >  td:nth-of-type(2) {
+	width: 140px;
 	padding-bottom: 15px;
+}
+
+div.vitae > table > tbody > tr > td {
+	padding-bottom: 10px;
+	vertical-align: top;
 }
 
 div.vitae > mdl-grid.div{
