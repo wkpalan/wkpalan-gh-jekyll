@@ -1,0 +1,111 @@
+- project: Gene Ontology Meta Annotator for Plants (GOMAP)
+  date: 2016 - Present
+  desc:
+    - Developed a new pipeline to annotate GO terms to plant protein sequences, which improves quality, quantity and reproducibility of GO annotations
+    - Currently finalizing the pipeline code, containerizing the pipeline and testing the pipeline before public release
+- project: Gene Ontology Meta Annotator for Plants (GOMAP)
+  date: 2016 - Present
+  desc:
+    - Developed a new pipeline to annotate GO terms to plant protein sequences, which improves quality, quantity and reproducibility of GO annotations
+    - Currently finalizing the pipeline code, containerizing the pipeline and testing the pipeline before public release
+
+# \raggedright
+# \textcolor{isu_med}{\textbf{Iowa State University}}\\[2mm]
+# \textbf{Thesis Projects} \\[2mm]
+
+# \expbox{Gene Ontology Meta Annotator for Plants (GOMAP)}
+# {2016 - Present}
+# {
+# 	\begin{itemize}[nosep]
+# 		\item Developed a new pipeline to annotate GO terms to plant protein sequences, which improves quality, quantity and reproducibility of GO annotations
+# 		\item Currently finalizing the pipeline code, containerizing the pipeline and testing the pipeline before public release
+# 	\end{itemize}
+# }
+
+# \expbox{Sequence-based methods to find the causal mutations in maize mutants}
+# {2014 - Present}
+# {
+#   \begin{itemize}[nosep]
+# 		\item Adapted and modified the existing GBS protocol, applied it to bulked segregants (BS-GBS) and analyzed data to find the causal locus of maize inflorescence mutants
+# 		\item Currently desinging a pipline to analyze whole-genome sequencing data from maize mutants to generate a list of candidate causal mutations
+#   \end{itemize}
+# }
+
+# \expbox{Identifying transposon and transgene insertion locations in maize}
+# {2014 - Present}
+# {
+#   \begin{itemize}[nosep]
+# 		\item Collborative project using NGS to identify transposon and transgene insertion locations using flanking regions
+#     \item Analyzed Illumina and PacBio data produced by different target enrichment strategies
+#   \end{itemize}
+# }
+# \expbox{maize-GO Annotation Methods, Evaluation, and Review (maize-GAMER)}
+# {2012 - 2018}
+# {
+#   \begin{itemize}[nosep]
+#     \item Generated a high-coverage and reproducible functional annotation dataset for maize protein coding genes using gene ontology (GO) terms, and evaluated the publicly available  maize GO annotations using a manually curated dataset
+#   \end{itemize}
+# }\\[2mm]
+
+# \textbf{Collaborative Projects} \\[2mm]
+
+# \expbox{Tools to design primers that amplify unique genomic targets}
+# {2017 - Present}
+# {
+#   \begin{itemize}[nosep]
+#     \item Developed (\href{https://github.com/vollbrechtlab/primerDAFT}{primerDAFT}) package to design PCR primers for a given target that can amplify unique targets for a given genome
+#     \item Mentored a computer engineering undergraduate student to build a web tool (\href{https://github.com/vollbrechtlab/primer-server}{PrimerServer}) for the lab to design primers
+#   \end{itemize}
+# }
+
+# \expbox{The maize W22 genome sequencing project}
+# {2016 - 2017}
+# {
+#   \begin{itemize}[nosep]
+#     \item My contribution was to determine insertion locations of Ac/Ds Transposon collection, and compare the locations between  maize W22 and B73 genomes
+#   \end{itemize}
+# }
+
+# \expbox{Effect of drought on early maize inflorescence development}
+# {2013 - 2017}
+# {
+# \begin{itemize}[nosep]
+# 	\item Coordinated a multi-institutional effort to collect RNA-seq and SEM samples to study drought effects on maize inflorescences
+# 	% \item Collected multi-tissue, multi-stage, and multi-time point infloresence samples from well-watered and drought-stressed maize plants at Dupont-Pioneer automated greenhouse
+# 	\item Extracted RNA, checked quality and outsourced the sequencing library preparation and sequencing efforts
+# \end{itemize}
+# }
+
+# \expbox{Gene network variation and alternative paths to convergent evolution in turtles }
+# {2014 - 2016}
+# {
+#   \begin{itemize}[nosep]
+#     \item Collaborative Volunteer project for the analysis of RNA-seq data from 3 different turtle species, which consisted of quantifying expression and \emph{de novo} transcriptome assembly and analysis
+#   \end{itemize}
+# }
+
+# \expbox{MaizeGDB expression analysis tool}
+# {2011 - 2012}
+# {
+#   \begin{itemize}[nosep]
+#     \item Built a web tool at MaizeGDB to visualize the expression dataset from the Maize Expression Atlas using MapMan web interface
+#   \end{itemize}
+# }\\[2mm]
+
+# \textcolor{isu_med}{\textbf{Miami University}} \\[2mm]
+
+# \expbox{Computational Analysis of Chlamydomonas reinhardtii Promoters}
+# {2010 - 2011}
+# {
+#   \begin{itemize}[nosep]
+#       \item Analyzed the \emph{C. reinhardtii} promoters and identified putative core and distal promoter elements, and compared the identified promoter elements other existing elements
+#   \end{itemize}
+# }
+
+# \expbox{Visualizing Genetic Maps using Open Source Tools}{2009 - 2011}
+# {
+#   \begin{itemize}[nosep]
+#     \item Deployed a customized version of the genetic map viewer \href{http://www.gmod.org/wiki/CMap}{CMap} as part of ConiferGDB, and developed modernized comparative map viewer (\href{https://bioinfolab.miamioh.edu/yougenmap/}{YouGenMap})
+#   \end{itemize}
+# }
+

@@ -1,22 +1,37 @@
 ---
-layout: default
+layout: vitae
 title: Vitae
 permalink: /vitae/
 ---
+
+# Vitae
 
 <div markdown="1" class="vitae">
 ### Education
 
 ### Research Experience
+##### Iowa State University
+
+| **Gene Ontology Meta Annotator for Plants (GOMAP)** | 2016 - Present |
+| Developed a new pipeline to annotate GO terms to plant protein sequences, which improves quality, quantity and reproducibility of GO annotations. Currently finalizing the pipeline code, containerizing the pipeline and testing the pipeline before public release | |
+| **Sequence-based methods to find the causal mutations in maize mutants** <br/> | 
+
 
 
 ### Teaching Experience
+##### Iowa State University
 
-| **Teaching Assistant** <br/> Principles of Genetics <br/> Iowa State University | Spring 2018 |
-| **Workshop instructor** <br/> Introduction to Linux/Unix <br/> Iowa State University | Spring 2016 & Spring 2015 |
-| **Course Instructor** <br/> General Botany <br/> Miami University | Summer 2011 |
-| **Teaching Assistant** <br/> General Botany & Plants and Environment <br/> Miami University | 2009 - 2011 |
-| **Demonstrator (Teaching Assistant)** <br/> Introduction to bioinformatics, Introduction to Molecular Biology, <br/> Plant Systematics, Genetics and Cell Biology <br/> University of Colombo | 2008 - 2009 |
+| **Teaching Assistant** <br/> Principles of Genetics | Spring 2018 |
+| **Workshop instructor** <br/> Introduction to Linux/Unix | Spring 2016 & Spring 2015 |
+
+##### Miami University
+
+| **Course Instructor** <br/> General Botany | Summer 2011 |
+| **Teaching Assistant** <br/> General Botany & Plants and Environment | 2009 - 2011 |
+
+##### University of Colombo
+
+| **Demonstrator (Teaching Assistant)** <br/> Introduction to bioinformatics, Introduction to Molecular Biology, <br/> Plant Systematics, Genetics and Cell Biology <br/>  | 2008 - 2009 |
 
 
 
