@@ -4,10 +4,10 @@ Gem::Specification.new do |spec|
   spec.name          = "gokool"
   spec.version       = "0.1.0"
   spec.authors       = ["Kokulapalan Wimalanathan"]
-  spec.email         = ["wkpalan@yahoo.com"]
+  spec.email         = ["kokulapalan@gmail.com"]
 
-  spec.summary       = "This is a theme for my personal site"
-  spec.homepage      = "https://github.com/wkpalan/gokool-jekyll-theme"
+  spec.summary       = "This is Gokul's personal site"
+  spec.homepage      = "https://github.com/wkpalan/wkpalan-gh-jekyll"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }

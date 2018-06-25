@@ -1,0 +1,44 @@
+- PhD:
+  title: PhD
+  major: Bioinformatics and Computational Biology
+  date: 2011 - Aug 2018 (Exp)
+  school: Iowa State University, Ames, Iowa, United States
+  advisors: "Advisors: Carolyn Lawrence-Dill & Erik Vollbrecht"
+  thesis: Experimental and computational methods to assign gene function in maize
+- MS:
+  title: MS
+  major: Botany
+  date: 2009 - 2011
+  school: Miami University, Oxford, Ohio, United States
+  advisors: "Advisor: Chun Liang"
+  thesis: Genome-wide computational analysis of <i>Chlamydomonas reinhardtii</i> promoters
+- MS:
+  title: BSc
+  major: Bioinformatics
+  date: 2005 - 2008
+  school: University of Colombo, Colombo, Sri Lanka
+  advisors: "Research Advisor: Shamala Tirimanne"
+  thesis: "Honors Research: Implementing client-side bioinformatics algorithms using JavaScript"
+
+
+  #       \begin{itemize}[label={}]
+  #         \item 
+  #         \item Advisors: 
+  #         \item Thesis: 
+  #       \end{itemize}
+  #     }
+  #     \datedsubsection{MS, Botany}{2009 - 2011}{
+  #       \begin{itemize}[label={}]
+  #         \item Miami University, Oxford, Ohio, United States
+  #         \item Advisor: Chun Liang
+  #         \item Dissertation:  Genome-wide computational analysis of \emph{Chlamydomonas reinhardtii} promoters
+  #       \end{itemize}
+  #     }
+      
+  #     \datedsubsection{BSc, Bioinformatics}{2005 - 2008}{
+  #       \begin{itemize}[label={}]
+  #         \item University of Colombo, Colombo, Sri Lanka
+  #         \item Research Advisor: Shamala Tirimanne
+  #         \item Honors Research: Implementing client-side bioinformatics algorithms using JavaScript
+  #       \end{itemize}
+  #     }

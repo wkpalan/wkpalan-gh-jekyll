@@ -51,14 +51,13 @@ scholar:
   order: descending
   group_by: year
   group_order: descending
-  bibliography_template: bib
   bibliography_group_tag: h4
-  bibliography_list_tag: 'div'
+  bibliography_list_tag: ul
   bibliography_list_attributes:
-    class: "pub-list"
-  bibliography_item_tag: 'div'
-  # bibliography_item_attributes:
-  #    class: "mdl-cell mdl-cell--12-col pub-item"
+    class: pub-list
+  bibliography_item_tag: li
+  bibliography_item_attributes:
+    class: pub-item
 
 jekyll_pubmed:
   - data: "publications"

@@ -1,0 +1,30 @@
+- name: Iowa State University
+  positions:
+    - title: Teaching Assistant
+      date: Spring 2018
+      classes:
+        - Principles of Genetics
+    - title: Workshop instructor
+      date: Spring 2016 <br>Spring 2015
+      classes:
+        - Introduction to Linux/Unix
+- name: Miami University
+  positions:
+    - title: Course Instructor
+      date: Summer 2011
+      classes:
+        - General Botany 
+    - title: Teaching Assistant
+      date: 2009 - 2011
+      classes:
+        - General Botany 
+        - Plants and Environment
+- name: University of Colombo
+  positions:
+    - title: Demonstrator (Teaching Assistant)
+      date: 2008 - 2009
+      classes: 
+        - Introduction to bioinformatics 
+        - Introduction to Molecular Biology 
+        - Plant Systematics 
+        - Genetics and Cell Biology
