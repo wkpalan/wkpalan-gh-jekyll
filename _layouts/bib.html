@@ -11,7 +11,7 @@
 				{% if author.first == "Kokulapalan" %}
 				<span class="bold_author">{{author.first | truncate: 1, ""}}. {{author.last}},</span>
 				{% else %}
-				<span>{{author.first| truncate: 1, ""}}. {{author.last}}{% if forloop.last %}.{% else %},{% endif %}</span>
+				<span>{{author.first| truncate: 1, ""}}. {{author.last}}{% if forloop.last %}.{% else %},{% endif %}</span> 
 				{% endif %}
 			{% endfor %}
 			{% if entry.howpublished %}
