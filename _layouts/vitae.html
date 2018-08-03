@@ -22,14 +22,14 @@ layout: default
                 <td>
                 {{degree.school}} <br>
                 {{degree.advisors}} <br>         
-                 {{degree.thesis}}
+                {{degree.thesis}}
             </td>
             </tr>
     {% endfor %}
-</table>
+    </table>
 
 
-    <h3>Research Experience</h3>
+    <h3 class="collapsible">Research Experience</h3>
     <hr>
     <h5>Iowa State University</h5>
 
@@ -72,30 +72,26 @@ layout: default
 
     <h3>Teaching Experience</h3>
     <hr>
-
     {% for uni in site.data.teaching_exp %}
-
-
     <h5> {{ uni.name }} </h5>
-        <table>
-        {% for exp in uni.positions %}
-            <tr>
-                <td> <strong>{{exp.title}} </strong></td>
-                <td rowspan=2> {{exp.date}} </td>
-            </tr>
-            <tr>    
-                <td>
-                    <ul>
-                    {% for class in exp.classes %}
-                        <li>{{class}}</li>
-                    {% endfor %}
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-</table>
-{% endfor %}
-    
+    <table>
+    {% for exp in uni.positions %}
+        <tr>
+            <td> <strong>{{exp.title}} </strong></td>
+            <td rowspan=2> {{exp.date}} </td>
+        </tr>
+        <tr>    
+            <td>
+                <ul>
+                {% for class in exp.classes %}
+                    <li>{{class}}</li>
+                {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+    {% endfor %}
     
 
     <h3>Talks</h3> 

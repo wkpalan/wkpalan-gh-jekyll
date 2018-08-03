@@ -24,16 +24,16 @@
 
 .sub-title{
 	text-align: center;
-	color:#000;
+	color:#FFF;
+	font-size: 32px;
 	font-weight: bolder;
 	background-color: #fff;
-	/* text-shadow: 	0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5; */
+	text-shadow: 	0 0 5px #000,
+								0 0 5px #000,
+								0 0 5px #000,
+								0 0 5px #000,
+								0 0 5px #000,
+								0 0 5px #000;
 }
 
 .home-text{
@@ -45,14 +45,6 @@
 	color: #ffffff;
   font-weight: bolder;
 }
-/* .sub-title{
-	/* padding-left: 20%; */
-	font-weight: bolder;
-  /* font-size:32px; */project-logo
-	color: #ffffff;
-	text-decoration: none;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-} */
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -249,3 +241,19 @@ table.education tr{
 	margin:0px;
 	line-height: 150%;
 } 
+.mdl-mini-footer{
+	padding: 5px;
+}
+active, .collapsible:hover {
+	background-color: #ccc;
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+	overflow: hidden;
+	transition: all 500ms linear;
+}

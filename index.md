@@ -26,6 +26,4 @@ title: Home
 		</h4>
 	</div>
 
-
-
 </div>
