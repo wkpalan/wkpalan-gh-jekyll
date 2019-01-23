@@ -9,4 +9,4 @@ publication: ""
 link: "http://herbarium.muohio.edu"
 ---
 
-Website development for the Willard Sherman Turrell Herbarium at Miami University of Ohio. The herbarium has an extensive collection of materials from diverse number of plant species.
+Website development for the **[Willard Sherman Turrell Herbarium](http://herbarium.muohio.edu)** at Miami University of Ohio. The herbarium has an extensive collection of materials from diverse number of plant species.

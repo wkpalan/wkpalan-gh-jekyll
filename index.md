@@ -11,18 +11,14 @@ title: Home
 	<div class="mdl-cell mdl-card mdl-cell--12-col mdl-cell--4-col-phone">
 		<div class="home-img">
 			<h1>
-			{{site.title}} 
+			Gokul Wimalanathan's
 			<br>
-			of
-			<br>
-			Kokulapalan Wimalanathan
+			{{site.title}}			
 			</h1>
 		</div>
 		<h4 class="sub-title">
-			a graduate student's <br> 
-			regular blunders in bioinformatics  <br>
-			at <br>
-			Iowa State University
+			a bioinformatic scientist's <br>
+			regular blunders in science  
 		</h4>
 	</div>
 

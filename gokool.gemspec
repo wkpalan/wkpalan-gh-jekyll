@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "jekyll-scholar"
   spec.add_development_dependency "citeproc-ruby"
   spec.add_development_dependency "csl-styles"
+  spec.add_development_dependency "unicode"
 
   Encoding.default_external = Encoding::UTF_8
 end
