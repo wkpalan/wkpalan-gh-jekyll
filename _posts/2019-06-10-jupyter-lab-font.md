@@ -11,15 +11,15 @@ description: "Setting to change the font size for Jupyter Lab"
 
 I have been recently using [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/) for my various data science and bioinformatics analysis on the lab servers. It has been really useful to prototype a number of components that I have been developing for the [**GOMAP**](https://gomap-singularity.readthedocs.io/en/v1.3/) pipeline. I have been working on the move and inbetween chunks of my time after work on a 13" laptop. The high dpi on a small screen has made it difficult to edit the code at times. You can see an example of what it looks like below.
 
-<img src="/assets/imgs/jupyter-lab-default-font.png/" style="width:800px">
+<img src="/assets/imgs/jupyter-lab-default-font.png" style="width:800px">
 
 I wish I had not gone down the google rabbit hole and actually checked where the settings were, but I spent a bunch of time reading old documentation and [github](https://www.github.com) issues to figure out how to change it. Even contemplated using a custom theme, but the settings are pretty easy to figure out, once you open the Advanced Settings Editor shown below.
 
-<img src="/assets/imgs/jupyter-lab-settings.png/" style="width:800px">
+<img src="/assets/imgs/jupyter-lab-settings.png" style="width:800px">
 
 There are two places that you would need to change to make the font same in all editor windows (Text Editor) and cells (Code Cell and Markdown Cell) in the Notebook. 
 
-<img src="/assets/imgs/jupyter-lab-settings-editor.png/" style="width:800px">
+<img src="/assets/imgs/jupyter-lab-settings-editor.png" style="width:800px">
 
 Setting the custom font size in the **User Overrides** would enable the font size increase or decrease if you prefer. I wanted to increase the size so I pasted the following in the box for Notebook
 
