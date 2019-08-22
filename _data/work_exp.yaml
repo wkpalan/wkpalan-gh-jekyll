@@ -1,0 +1,10 @@
+sophia:
+  - title: Bioinformatics Specialist
+    date: May 2019 - Present
+    desc:
+      - Working on analyzing NGS data from probe-capture and amplicon panels on clinical samples to identify variants
+      - Working on different assays used for Somatic and Germline samples ranging from small targeted panels to whole exome sequencing
+      - Analyze data using proprietary pipelines developed for variant calling, assess the sensitivity on difficult samples and variants, and work with the team to optimize the pipelines
+      - Summarize the data using R and Python and communicate results to team members, collaborators and clients
+      - Adhere to high standards of analysis quality, attention to details, and meet demands of fast-paced analysis cycles and deadlines
+  
