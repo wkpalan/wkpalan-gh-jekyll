@@ -15,8 +15,7 @@ permalink: /contact/
 			</div>
 			<div class="mdl-card__supporting-text">
 				<ul>
-					<li> <a href="mailto:kokulapalan@gmail.com">kokulapalan@gmail.com</a> </li>
-					<li> <a href="mailto:kokul@iastate.edu">kokul@iastate.edu</a> </li>
+					<li> <a href="mailto:kokul@blunderingbioinformatics.org">kokul@blunderingbioinformatics.org</a> </li>
 				</ul>
 				</div>
 		</div>

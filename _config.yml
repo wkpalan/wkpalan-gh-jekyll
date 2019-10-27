@@ -13,14 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Bioinformatics Blunders"
+title: "Blundering Bioinformatics"
 email: wkpalan@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-    The personal website of Kokulapalan Wimalanathan
-    A Doctoral Candidate in Bioinformatics and Computational Biology at
-    Iowa State University
+    The personal website of Kokulapalan (Gokul) Wimalanathan, an experienced
+    bioinformatics scientist currently working at SOPHiA Genetics
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wkpalan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.blunderingbioinformatics.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gokool4bioinfo
 github_username:  wkpalan
 

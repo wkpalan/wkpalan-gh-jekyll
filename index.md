@@ -11,14 +11,16 @@ title: Home
 	<div class="mdl-cell mdl-card mdl-cell--12-col mdl-cell--4-col-phone">
 		<div class="home-img">
 			<h1>
-			Gokul Wimalanathan's
+			Gokul's
 			<br>
-			{{site.title}}			
+			Blundering(s) <br/>
+			in <br/>
+			Bioinformatics
 			</h1>
 		</div>
 		<h4 class="sub-title">
 			a bioinformatic scientist's <br>
-			regular blunders in science  
+			regular blunders  
 		</h4>
 	</div>
 
