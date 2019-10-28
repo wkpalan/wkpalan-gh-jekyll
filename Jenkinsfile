@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo 'Copying the site files'
                 sh '''
-                    rsync -auv --no-owner --no-group --no-times * /var/www/blunderingbioinformatics.org/html/
+                    make publish
                 '''
                 echo 'Website Updated'
             }
