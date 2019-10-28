@@ -6,6 +6,7 @@ pipeline {
                 echo 'Building the site'
                 sh '''
                     make site
+                    ls -lh
                 '''
                 echo 'Site successfully built'
             }
