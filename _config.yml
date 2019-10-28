@@ -42,6 +42,7 @@ exclude:
   - '*.sh'
   - 'site'
   - temp.html
+  - Jenkinsfile
 
 scholar:
   bibliography_template: bib
