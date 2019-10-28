@@ -4,29 +4,6 @@ layout: default
 
 <div class="vitae" markdown="1">
 
-    <h3>Education</h3>
-    <hr>
-    <table class="education">
-    {% for degree in site.data.education %}
-            <tr>
-                <td>
-                    <strong>
-                    {{degree.title}}, {{degree.major}}
-                    </strong>
-                </td>
-                <td>
-                        {{degree.date}}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                {{degree.school}} <br>
-                {{degree.advisors}} <br>         
-                {{degree.thesis}}
-            </td>
-            </tr>
-    {% endfor %}
-    </table>
 
     <h3 class="collapsible">Professional Experience</h3>
     <hr>
@@ -89,6 +66,30 @@ layout: default
                 </ul>
             </td>
         </tr>
+    {% endfor %}
+    </table>
+
+    <h3>Education</h3>
+    <hr>
+    <table class="education">
+    {% for degree in site.data.education %}
+            <tr>
+                <td>
+                    <strong>
+                    {{degree.title}}, {{degree.major}}
+                    </strong>
+                </td>
+                <td>
+                        {{degree.date}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                {{degree.school}} <br>
+                {{degree.advisors}} <br>         
+                {{degree.thesis}}
+            </td>
+            </tr>
     {% endfor %}
     </table>
 

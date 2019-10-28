@@ -20,7 +20,7 @@ permalink: /contact/
 				</div>
 		</div>
 
-		<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone  mdl-card">
+		<!-- <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone  mdl-card">
 		<div class="mdl-card__title mdl-card--border">
 		<div class="mdl-card__title-text">
 			<h4>Current Addresses</h4>
@@ -32,7 +32,7 @@ permalink: /contact/
 			<a href="https://dill-picl.org" target="_blank"><h5>Lawrence-Dill PICL</h5></a>
   				1060 Roy J. Carver Co-Laboratory, <br /> Iowa State University, <br /> 1111 WOI Road <br /> Ames, IA 50011-3650
 					</div>
-    </div>
+    </div> -->
 
 
       <div class="mdl-cell mdl-card mdl-cell--12-col">
