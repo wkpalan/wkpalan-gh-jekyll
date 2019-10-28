@@ -6,7 +6,7 @@ site:
 	bundle exec jekyll build -d $(SITE)
 
 publish:
-	rsync -auv $(SITE)/ /var/www/blunderingbioinformatics.org/html/
+	rsync -auv --no-owner --no-group --no-times $(SITE)/ /var/www/blunderingbioinformatics.org/html/
 
 clean :
 	$(RM) $(SITE)
