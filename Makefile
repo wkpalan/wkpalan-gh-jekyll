@@ -8,5 +8,8 @@ site:
 publish:
 	rsync -auv --no-owner --no-group --no-times $(SITE)/ /var/www/blunderingbioinformatics.org/html/
 
+serve:
+	bundle exec jekyll serve -H 0.0.0.0 -P 4001 -d site
+
 clean :
 	$(RM) $(SITE)

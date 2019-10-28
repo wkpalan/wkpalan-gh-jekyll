@@ -16,12 +16,12 @@
 title: "Blundering Bioinformatics"
 email: wkpalan@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-    The personal website of Kokulapalan (Gokul) Wimalanathan, an experienced
-    bioinformatics scientist currently working at SOPHiA Genetics
+  The personal website of Kokulapalan (Gokul) Wimalanathan, an experienced
+  bioinformatics scientist currently working at SOPHiA Genetics
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.blunderingbioinformatics.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gokool4bioinfo
-github_username:  wkpalan
+github_username: wkpalan
 
 # Build settings
 markdown: kramdown
@@ -31,18 +31,18 @@ plugins:
   - jekyll-scholar
   - jekyll-sitemap
 
-
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
   - README.md
   - LICENSE.txt
-  - '*gemspec'
-  - '*.sh'
-  - 'site'
+  - "*gemspec"
+  - "*.sh"
+  - "site"
   - temp.html
   - Jenkinsfile
+  - Makefile
 
 scholar:
   bibliography_template: bib
@@ -62,7 +62,6 @@ scholar:
 jekyll_pubmed:
   - data: "publications"
     term: "Wimalanathan K"
-
 #jekyll_get:
 #  - data: publications
 #    json: 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26432828'
