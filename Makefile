@@ -9,4 +9,4 @@ publish:
 	rsync -auv --no-owner --no-group --no-times $(SITE) /var/www/blunderingbioinformatics.org/html/
 
 clean :
-    $(RM) $(SITE)
+	$(RM) $(SITE)
