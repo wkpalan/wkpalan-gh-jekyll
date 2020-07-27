@@ -1,4 +1,5 @@
 $(document).ready(function($) {
+	google.charts.load('current', {packages: ['corechart']});
 	google.setOnLoadCallback(drawChart);
 
 	function drawChart(){
