@@ -24,13 +24,13 @@ $(document).ready(function($) {
 			},
 			vAxis:{
 				title: 'Quality value',
-				max:60,
+				max:50,
 				min:0
 			},
 			vAxes: {0:
 				{viewWindowMode:'explicit',
 	                		viewWindow:{
-						max:60,
+						max:50,
 						min:0
 		                          }
 				}
