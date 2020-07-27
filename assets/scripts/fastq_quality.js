@@ -10,8 +10,8 @@ $(document).ready(function($) {
 		quals = quality_lines[3]
 		quals_ascii = Array();
 		for(var i=0; i<quals.length;i++){
-			data.addRow([i+1,quals.charCodeAt(i)-64])
-			quals_ascii.push([i,quals.charCodeAt(i)-64])
+			data.addRow([i+1,quals.charCodeAt(i)- 33])
+			quals_ascii.push([i,quals.charCodeAt(i) - 33])
 		}
 		//console.log(data);
 		var options = {
