@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 	google.charts.load('current', {packages: ['corechart']});
-	google.setOnLoadCallback(drawChart);
+	google.setOnLoadCallback(drawChart);  
 
 	function drawChart(){
 		var quality_lines = $("#fastq_txt").val().split("\n");
