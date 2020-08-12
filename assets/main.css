@@ -85,6 +85,7 @@ div.mdl-card__title > img{
 }
 
 .pub-list{
+	width:100%;
 	padding-left: 25px;
 	clear: both;
 }
@@ -144,6 +145,7 @@ div.mdl-card__title > img{
 	padding-left: 15px;
 	padding-right: 10px;
 	list-style-type: none;
+	clear: both;
 }
 
 
@@ -281,4 +283,11 @@ active, .collapsible:hover {
 .nav-link{
 	font-size: 20px;
 	font-weight: bolder;
+	text-shadow: 	0 0 5px #000,
+					0 0 5px #000,
+					0 0 5px #000,
+					0 0 5px #000,
+					0 0 5px #000,
+					0 0 5px #000,
+					0 0 5px #000;
 }
