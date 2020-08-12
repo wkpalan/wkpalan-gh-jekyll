@@ -13,6 +13,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
   spec.add_dependency "jekyll"
+  
+ 
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
@@ -24,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "citeproc-ruby"
   spec.add_development_dependency "csl-styles"
   spec.add_development_dependency "unicode"
+
 
   Encoding.default_external = Encoding::UTF_8
 end

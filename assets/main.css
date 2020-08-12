@@ -1,13 +1,14 @@
 .page-content{
-	max-width:768px;
+	padding:20px;
 	margin-left: auto;
-  margin-right: auto;
+  	margin-right: auto;
 }
 .home-img{
 	text-align: center;
 	background-image: url("/assets/imgs/seamless-dna.png");
 	padding: 0 20px;
-	margin:0px;
+	margin-left: auto;
+  	margin-right: auto;
 	max-width:660px;
 }
 .home-img > h1{
@@ -44,6 +45,12 @@
 .main-title{
 	color: #ffffff;
   font-weight: bolder;
+  text-shadow: 	0 0 5px #000,
+								0 0 5px #000,
+								0 0 5px #000,
+								0 0 5px #000,
+								0 0 5px #000,
+								0 0 5px #000;
 }
 
 @media only screen and (max-width: 768px) {
@@ -256,4 +263,22 @@ active, .collapsible:hover {
   display: none;
 	overflow: hidden;
 	transition: all 500ms linear;
+}
+
+.portfolio-header{
+	/* min-height: 200px; */
+	/* position: relative; */
+	background-image: url(/assets/imgs/main-header-rz.jpg);
+	background-size: cover;
+}
+.portfolio-title{
+	min-height: 150px;
+}
+.portfolio-nav-row{
+	background-color:rgba(0, 0, 0, 0.2);
+}
+
+.nav-link{
+	font-size: 20px;
+	font-weight: bolder;
 }
