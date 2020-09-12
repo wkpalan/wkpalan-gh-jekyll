@@ -33,7 +33,8 @@ $(document).ready(function($) {
 						min:0
 		                          }
 				}
-			}
+			},
+			'height':400
 		};
 		//console.log(document.getElementById("chart_div"))
 		var chart = new google.visualization.LineChart(document.getElementById("chart_div"));
