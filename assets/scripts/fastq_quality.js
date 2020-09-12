@@ -17,7 +17,6 @@ $(document).ready(function($) {
 		var options = {
 			chart:{
 				title: 'Pos vs Quality',
-				subtitle: 'in millions of dollars (USD)'
 			},
 			hAxis:{
 				title: 'Position'
@@ -34,15 +33,23 @@ $(document).ready(function($) {
 						min:0
 		                          }
 				}
-			},
-			width: 600,
-			height: 500
+			}
 		};
 		//console.log(document.getElementById("chart_div"))
 		var chart = new google.visualization.LineChart(document.getElementById("chart_div"));
 		//console.log(chart);
 		chart.draw(data, options);
-		$("#ascii_code").val(quals_ascii.join("\n"))
+		console.log(quals_ascii)
+		if ( $.fn.dataTable.isDataTable('#ascii_code') ) {
+			table = $('#ascii_code').DataTable();
+			console.log(table)
+			table.clear().rows.add(quals_ascii).draw()
+		}else{
+			$('#ascii_code').DataTable({
+				data: quals_ascii
+			});
+		}
+		
 	}
 	$("#draw_plot_btn").click(function(){
 		drawChart();
