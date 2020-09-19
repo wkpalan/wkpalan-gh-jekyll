@@ -30,6 +30,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-scholar
   - jekyll-sitemap
+  - jekyll-relative-links
 
 exclude:
   - Gemfile

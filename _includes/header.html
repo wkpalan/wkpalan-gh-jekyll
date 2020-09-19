@@ -2,11 +2,14 @@
 
 <div id="header" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header portfolio-header">
-		<div class="mdl-layout__header-row portfolio-title">
-      <h1 class="main-title">{{site.title}}</h4>
+		<div class="mdl-layout__header-row portfolio-title mdl-layout--large-screen-only">
+        <canvas id="test" style="width: 100%; height: 150px;"></canvas>
+    </div>
+		<div class="mdl-layout__header-row portfolio-title mdl-layout--small-screen-only">
+        <div class="small-screen-header">BIOINFORMAPPING</div>
     </div>
 		<div class="mdl-layout__header-row portfolio-nav-row">
-			<div class="mdl-layout-spacer"></div>
+			<!-- <div class="mdl-layout-spacer"></div> -->
       <nav class="mdl-navigation mdl-layout--large-screen-only mdl-js-ripple-effect">
         <a class="mdl-navigation__link nav-link" href="/">Home</a>
         <a class="mdl-navigation__link nav-link" href="/projects/">Projects</a>
@@ -28,3 +31,5 @@
 			<a class="mdl-navigation__link" href="/contact/">Contact</a>
     </nav>
   </div>
+
+  <!-- <canvas id="test" style="width: 100%; height: 150px;border:thin solid black;"></canvas> -->

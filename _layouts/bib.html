@@ -26,9 +26,9 @@
 			{% endif %}
 			
 			{% if entry.doi %}
-				[<a target="_blank" href="{{entry.url}}">{{entry.doi}}</a>]
+				[<a target="_blank" class="doi_link" href="{{entry.url}}">{{entry.doi}}</a>]
 			{% elsif entry.url %}
-				[<a target="_blank" href="{{entry.url}}">link</a>] 
+				[<a target="_blank" class="doi_link" href="{{entry.url}}">link</a>] 
 			{% endif %}
 	</div>
 

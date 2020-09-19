@@ -11,31 +11,6 @@
   	margin-right: auto;
 	width:660px;
 }
-.home-img > h1{
-	color:#fff;
-	font-weight: bolder;
-	text-shadow: 	0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5,
-								0 0 5px #3F51B5;
-}
-
-.sub-title{
-	text-align: center;
-	color:#FFF;
-	font-size: 32px;
-	font-weight: bolder;
-	background-color: #fff;
-	text-shadow: 	0 0 5px #000,
-								0 0 5px #000,
-								0 0 5px #000,
-								0 0 5px #000,
-								0 0 5px #000,
-								0 0 5px #000;
-}
 
 .home-text{
 	padding:30px;
@@ -93,6 +68,7 @@ div.mdl-card__title > img{
 .pub_title{
   /* font-size: 12pt; */
   font-weight: bold;
+  color:#973f1d;
 }
 
 .pub-item, .pub_entry{
@@ -111,6 +87,13 @@ div.mdl-card__title > img{
 .pub_details{
   margin:20px;
 	clear: both;
+}
+h2{
+	color:#3a5f7e;
+}
+
+.doi_link,.post_url{
+	color:#973f1d;
 }
 
 .authors{
@@ -165,7 +148,7 @@ div.mdl-card__title > img{
 }
 
 .project-desc p{
-	font-size: 14pt; !important
+	font-size: 14pt;
 }
 .project-img{
 	text-align: center;
@@ -173,7 +156,7 @@ div.mdl-card__title > img{
 .project-img img{
 	width:100%;
 	max-width: 300px;
-	max-hight: 300px;
+	max-height: 300px;
 }
 
 .post-date{
@@ -191,13 +174,13 @@ div.vitae > h3{
 	padding: 0px;
 	padding-top: 15px;
 	margin: 0px;
-	color:#C8102E;
+	color:#973f1d;
 }
 
 div.vitae > h5{
 	padding-left: 10px;
 	margin: 0px;
-	color:#524727;
+	color:#b66920;
 }
 
 div.vitae h4{
@@ -270,24 +253,31 @@ active, .collapsible:hover {
 .portfolio-header{
 	/* min-height: 200px; */
 	/* position: relative; */
-	background-image: url(/assets/imgs/main-header-rz.jpg);
-	background-size: cover;
+	/* background-image: url(/assets/imgs/main-header-rz.jpg);
+	background-size: cover; */
+	color:"white";
+	background-color:#3a5f7e;
+}
+.small-screen-header{
+	color:"white";
+	font-size: 24px;
+	font-family: monospace;
+	font-weight: bolder;
 }
 .portfolio-title{
-	min-height: 150px;
+	height: 150px;
 }
 .portfolio-nav-row{
-	background-color:rgba(0, 0, 0, 0.2);
+	/* background-color:#3a5f7e; */
+	/* border-top: #FFF thin solid; */
 }
 
 .nav-link{
-	font-size: 20px;
 	font-weight: bolder;
-	text-shadow: 	0 0 5px #000,
-					0 0 5px #000,
-					0 0 5px #000,
-					0 0 5px #000,
-					0 0 5px #000,
-					0 0 5px #000,
-					0 0 5px #000;
+	font-size: 20px;
+}
+
+.project_title > a{
+	text-decoration: none;
+	color:#973f1d;
 }

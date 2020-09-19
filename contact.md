@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-# Contact
+## Contact
 
   <div class="mdl-grid">
     <div class="mdl-cell mdl-card mdl-cell--12-col mdl-cell--4-col-phone">
@@ -15,7 +15,7 @@ permalink: /contact/
 			</div>
 			<div class="mdl-card__supporting-text">
 				<ul>
-					<li> <a href="mailto:kokul@blunderingbioinformatics.org">kokul@blunderingbioinformatics.org</a> </li>
+					<li> <a href="mailto:kokul@blunderingbioinformatics.org">kokul@bioinformapping.com</a> </li>
 				</ul>
 				</div>
 		</div>
@@ -42,7 +42,7 @@ permalink: /contact/
 			</div>
 			</div>
 			<div class="mdl-card__supporting-text">
-        <a href="https://twitter.com/gokool4bioinfo" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored contact-btn" title="Twitter">
+        <a href="https://twitter.com/bioinformapping" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored contact-btn" title="Twitter">
                 <i class="fab fa-twitter fa-2x fas-icons" ></i>
               </a>
         <a href="http://www.linkedin.com/in/kokulapalan" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored contact-btn" title="LinkedIn">

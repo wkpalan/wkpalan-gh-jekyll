@@ -4,5 +4,5 @@ title: Vitae
 permalink: /vitae/
 ---
 
-# Vitae
+## Vitae
 

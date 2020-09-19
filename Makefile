@@ -9,7 +9,7 @@ publish:
 	rsync -rluv $(SITE)/ /var/www/blunderingbioinformatics.org/html/
 
 serve:
-	bundle exec jekyll serve -H 0.0.0.0 -P 4001 -d site
+	bundle exec jekyll serve -H 0.0.0.0 -P 4001 -d site --trace
 
 clean :
 	$(RM) $(SITE)

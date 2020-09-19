@@ -2,7 +2,6 @@
 layout: post
 title:  "Fastq Quality Chart"
 date:   2020-09-12
-categories: blogs
 description: "A simple tool to plot quality scores of a single fastq line"
 tags: [fastq, quality value, plots]
 ---

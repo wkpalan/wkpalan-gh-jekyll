@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<h1>Blog</h1>
+<h2>Blog</h2>
 
 <div class="mdl-grid">
-  {% for post in site.categories.blogs %}
+  {% for post in site.categories.blog %}
   <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone post mdl-shadow--2dp">
 		<h4>
-      <a href="{{post.url}}">
+      <a class="post_url" href="{{post.url}}">
 				{{ post.title}}
 			</a>
 		</h4>

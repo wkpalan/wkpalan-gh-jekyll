@@ -2,7 +2,6 @@
 layout: post
 title:  "Changing Jupyter Lab Font Size"
 date:   2019-06-10
-categories: blogs
 tags: [jupyter lab, font size, font-size, jupyter lab settings]
 description: "Setting to change the font size for Jupyter Lab"
 ---
