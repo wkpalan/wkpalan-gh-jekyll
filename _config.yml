@@ -26,6 +26,13 @@ github_username: wkpalan
 # Build settings
 markdown: kramdown
 theme: gokool
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: bash
+    css_class   : 'syntax'
+    block:
+      line_numbers: true
 plugins:
   - jekyll-seo-tag
   - jekyll-scholar

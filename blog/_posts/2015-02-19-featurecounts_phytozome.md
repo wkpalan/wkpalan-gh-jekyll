@@ -61,22 +61,24 @@ chr_1	phytozomev10	CDS	19329	19948	.	+	2	Parent=Cre01.g000017.t1.1.v5.5
 	Here we can see that exon attributes have been added and these have coordinates which overlap the closest UTRs and CDS regions together. This makes it easier to count the number of reads using HTSeq and featureCounts. The commands are given below.
 </p>
 
-
-{% highlight shell %}
+```bash
 #Convert the Phytozome gff3 to featureCounts compatible gff3 -o parameter defines the output file, and -O parameter tells the program to output non transcript feature types.
 gffread sample.gff3 -o sample.fc.gff3 -O
 
 #count the reads aligned to each transcript "-g Parent" parameter is essential to aggregate the read count per transcript otherwise program will stop with an error
 featureCounts -a sample.gff3 -o sample.counts -g Parent  sample.bam
-{% endhighlight %}
+```
+
 <h3>Update</h3>
 <p>
 	I have found this to be slightly incorrect when working with multiple transcripts for a gene which have overlapping introns. Then featureCounts does not count the reads correctly and assigns exons shared by multiple transcripts as ambiguous. You can use the -O option to allow fragements/reads aligned to overlapping meta-features to be counted correctly.
 </p>
-<pre class="line-numbers"><code class="language-bash">
+
+```bash
 #count the reads aligned to each transcript "-g Parent" parameter is essential to aggregate the read count per transcript otherwise program will stop with an error
 featureCounts -a sample.gff3 -O -o sample.counts -g Parent  sample.bam
-</code></pre>
+````
+
 <p>
 	The gff3 output (e.g. sample.fc.gff3) can be used directly by either program mentioned above for read counting. The flip side is that the read count will be done per transcript instead of counting the reads per gene. The proportion of genes which have more than one transcript vary from species to species. For example this number in latest Chlamydomonas genome release is ~8 %. Depending on the level of accuracy and the question asked there can be multiple ways to summarize the counts per gene. We will explore these different avenues in forthcoming posts.
 </p>

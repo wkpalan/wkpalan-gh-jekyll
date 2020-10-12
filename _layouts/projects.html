@@ -21,7 +21,7 @@ layout: default
 			<div class="mdl-grid">
 				<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet project-img" >
 					{% if project.link %}
-						<a href="{{ project.link }}" target="_blank">
+						<a href="{% link {{ project.project_url }} %}">
 					{% endif %}
 							<img src="{{project.img}}"/>
 					{% if project.link %}
