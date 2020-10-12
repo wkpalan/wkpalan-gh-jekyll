@@ -28,7 +28,6 @@ Initially the issue was that I made the ports too tight and disallowed all ports
 192.30.252.0/22,185.199.108.0/22,140.82.112.0/20
 ```
 
-
 <img src="/assets/imgs/open_inbound_ports.png" style="width:800px">
 
 Now the hooks work as expected and are as secure as I could get them.
