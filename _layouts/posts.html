@@ -5,23 +5,22 @@ layout: default
 
 {{ content }}
 
-<div class="mdl-grid">
+<ul class="mdl-list">
   {% for post in site.categories.blog %}
-  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone post mdl-shadow--2dp">
-		<h4>
-      <a class="post_url" href="{{post.url}}">
-				{{ post.title}}
-			</a>
-		</h4>
-
-    <div>
-      {{ post.description }}
-    </div>
-		<br/>
-		<div class="post-date mdl">
-      {{ post.date | date: '%B %d, %Y' }}
-    </div>
-
-  </div>
+  <li class="mdl-list__item mdl-list__item--three-line">
+		<span class="mdl-list__item-primary-content">
+      <!-- <i class="material-icons mdl-list__item-avatar">biotech</i> -->
+      <i class="material-icons mdl-list__item-avatar">biotech</i>
+      <a class="post_url" href="{{post.url}}}}">{{ post.title}}</a>
+      <span class="mdl-list__item-text-body">
+        {{ post.description }}
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <span class="mdl-list__item-secondary-action">
+        {{ post.date | date: '%B %d, %Y' }}
+      </span>
+    </span>
+  </li>
   {% endfor %}
-</div>
+</ul>
