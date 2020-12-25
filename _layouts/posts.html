@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-<h2>Blog</h2>
+<h2>{{ page.title }}</h2>
+
+{{ content }}
 
 <div class="mdl-grid">
   {% for post in site.categories.blog %}
