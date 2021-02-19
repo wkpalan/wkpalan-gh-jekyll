@@ -47,7 +47,30 @@ layout: default
         </tr>
     {% endfor %}
     </table>
+{% capture md %}
 
+### Technical Skills
+---
+##### Computational Skills
+
+* Languages: R, Python, JavaScript, PHP,  Perl, HTML, bash
+* Web Frameworks: Flask, Django, Angular, R-Shiny
+* Cloud: Amazon AWS and Microsoft Azure
+* Databases: MySQL/MariaDB, PostgreSQL, Neo4j
+* Containerization: Docker and Singularity
+* Other: Unix/Linux and Windows OS, Torque/PBS and Slurm HPC environments
+
+##### Experimental Skills
+
+* Standard PCR techniques (PCR, and RT-PCR)
+* Experimental design, dissection and sample collection for NGS experiments
+* DNA/RNA extraction from fixed and fresh samples
+* BioAnalyzer, Fragment Analyzer, and Qubit for DNA/RNA Quantity and Quality
+* Illumina Library Construction and QC
+* Field experience in maize
+
+{% endcapture %}
+{{ md | markdownify }}
 
     <h3 class="collapsible">Research Experience</h3>
     <hr>
@@ -152,25 +175,6 @@ layout: default
     </div>
 
 {% capture md %}
-
-### Technical Skills
----
-##### Computational Skills
-
-* Languages: R, Python, JavaScript, PHP,  Perl, HTML, bash
-* Web Frameworks: Flask, Django, Angular, R-Shiny
-* Databases: MySQL/MariaDB, PostgreSQL, Neo4j
-* Containerization: Docker and Singularity
-* Other: Unix/Linux and Windows OS, Torque/PBS and Slurm HPC environments
-
-##### Experimental Skills
-
-* Standard PCR techniques (PCR, and RT-PCR)
-* Experimental design, dissection and sample collection for NGS experiments
-* DNA/RNA extraction from fixed and fresh samples
-* BioAnalyzer, Fragment Analyzer, and Qubit for DNA/RNA Quantity and Quality
-* Illumina Library Construction and QC
-* Field experience in maize
 
 ### Awards and Fellowships
 ---
