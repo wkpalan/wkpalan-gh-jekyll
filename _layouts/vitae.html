@@ -9,6 +9,25 @@ layout: default
 
     <h3 class="collapsible">Professional Experience</h3>
     <hr>
+    <h5>Greenlight Biosciences</h5>
+
+    <table>
+    {% for project in site.data.work_exp.greenlight %}
+        <tr>
+            <td><strong>{{project.title}}</strong></td>
+            <td>{{project.date}}</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                {% for desc in project.desc %}
+                    <li>{{desc}}</li>
+                {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
     <h5>SOPHiA Genetics</h5>
 
     <table>

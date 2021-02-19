@@ -6,3 +6,5 @@ vendor
 _site
 site
 .jekyll-cache/
+tmp.txt
+*:Zone.Identifier
