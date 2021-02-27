@@ -8,8 +8,8 @@ description: "Using Vouch-proxy and NGINX with Okta to authentication for all vi
 
 ### Enabling Okta Authentication from NGINX
 
-I had been recently tasked enabling okta authentication to all the users who use a private jbrowse instance. This was necessaary to achieve three different goals
-1.  Enhance Secutiry and allows only authorized users to access the jbrowse instance
+I had been recently tasked enabling okta authentication to all the users who use a private Jbrowse2 instance. This was necessary to achieve three different goals
+1.  Enhance Security and allows only authorized users to access the jbrowse instance
 2.  Integrate Jbrowse2 with into multiple apps with a single sign-on (SSO)
 3.  Reduce the traffic through the VPN tunnel especially when using heavy data such as alignment tracks and other genomic files
 
