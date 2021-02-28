@@ -8,9 +8,9 @@ description: "Using Vouch-proxy and NGINX with Okta to authentication for all vi
 
 ### Enabling Okta Authentication from NGINX
 
-I had been recently tasked enabling okta authentication to all the users who use a private Jbrowse2 instance. This was necessary to achieve three different goals
-1.  Enhance Security and allows only authorized users to access the jbrowse instance
-2.  Integrate Jbrowse2 with into multiple apps with a single sign-on (SSO)
+I had been recently tasked enabling Okta authentication to all the users who use a private Jbrowse 2 instance. This was necessary to achieve three different goals
+1.  Enhance Security and allows only authorized users to access the Jbrowse 2 instance
+2.  Integrate Jbrowse 2 with into multiple apps with a single sign-on (SSO)
 3.  Reduce the traffic through the VPN tunnel especially when using heavy data such as alignment tracks and other genomic files
 
 I discovered a way to enable authentication to all visitors to a web-server with [NGINX](https://www.nginx.com/) and [vouch-proxy](https://github.com/vouch/vouch-proxy). I discovered this [blog post](https://developer.okta.com/blog/2018/08/28/nginx-auth-request) by Aaron Parecki on the Okta Developer blogs. After a few tries I found a basic configuration that worked for NGINX and vouch-proxy.
@@ -33,7 +33,7 @@ First you need to create a free Okta developer account at [https://developer.okt
     <img src="/assets/imgs/okta-nginx/okta-dev-app-dets.png" width="500px"/>
 5. Note down application Credentials. We will need it to configure vouch-proxy later
    1. Client ID 
-   2. Client secret 
+   2. Client secret <br/> 
     <img src="/assets/imgs/okta-nginx/okta-dev-app-creds.png" width="500px"/>
 
 
