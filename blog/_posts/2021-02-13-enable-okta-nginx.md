@@ -179,11 +179,11 @@ First you need to create a free Okta developer account at [https://developer.okt
         # Generic OpenID Connect
         # including okta
         provider: oidc
-        client_id: 0oa5xn6r0pljJS8yC5d6
-        client_secret: L8FhYT29jbgDNvj7F-V7hw6OFzT3Emll_B8Wa-CD
-        auth_url: https://dev-31204354.okta.com/oauth2/default/v1/authorize
-        token_url: https://dev-31204354.okta.com/oauth2/default/v1/token
-        user_info_url: https://dev-31204354.okta.com/oauth2/default/v1/userinfo
+        client_id: XXXXXXXXXXXXXXXXXXXX
+        client_secret: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+        auth_url: https://dev-ZZZZZZZZ.okta.com/oauth2/default/v1/authorize
+        token_url: https://dev-ZZZZZZZZ.okta.com/oauth2/default/v1/token
+        user_info_url: https://dev-ZZZZZZZZ.okta.com/oauth2/default/v1/userinfo
         scopes:
             - openid
             - email
