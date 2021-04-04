@@ -15,7 +15,7 @@ permalink: /contact/
 			</div>
 			<div class="mdl-card__supporting-text">
 				<ul>
-					<li> <a href="mailto:kokul@blunderingbioinformatics.org">kokul@bioinformapping.com</a> </li>
+					<li> <a href="mailto:kokul@bioinformapping.com">kokul@bioinformapping.com</a> </li>
 				</ul>
 				</div>
 		</div>
