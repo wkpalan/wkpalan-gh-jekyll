@@ -2,7 +2,7 @@ SITE= site
 RM= rm -rf
 
 site:
-	bundler install #--path vendor/bundle
+	bundler install --path vendor/bundle
 	bundler exec jekyll build -d $(SITE)
 
 publish:
