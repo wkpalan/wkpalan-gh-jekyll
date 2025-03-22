@@ -48,7 +48,7 @@ permalink: /contact/
         <a href="http://www.linkedin.com/in/kokulapalan" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored contact-btn" title="LinkedIn">
             <i class="fab fa-linkedin fa-2x fas-icons"></i>
           </a>
-        <a href="https://github.com/wkpalan" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored contact-btn" title="Github">
+        <a href="https://github.com/bioinformapping" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored contact-btn" title="Github">
             <i class="fab fa-github fa-2x fas-icons"></i>
           </a>
         <a href="https://orcid.org/0000-0001-7811-935X" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored contact-btn" title="ORCiD">

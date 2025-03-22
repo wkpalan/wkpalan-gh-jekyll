@@ -294,3 +294,8 @@ active, .collapsible:hover {
 .highlight{
 	max-width:1024px;
 }
+
+.mdl-layout__header-row{
+	/* padding: 10px; */
+	margin: 10px;
+}
