@@ -2,7 +2,8 @@ SITE= site
 RM= rm -rf
 
 site:
-	bundler install --path vendor/bundle
+	bundle config set path 'vendor/bundle'
+	bundler install
 	bundler exec jekyll build -d $(SITE)
 
 publish:
