@@ -2,11 +2,13 @@ atalanta:
   - title: Senior Bioinformatics Scientist
     date: Apr 2023 - Present
     desc:
-      - Lead bioinformatics projects to enable transcriptomics, genomics, and other data-intensive analyses for pipeline enrichment.
-      - Mentor a team of talented junior scientists to enable bioinformatics and data-science efforts to improve drug safety and efficacy.
-      - Implement an in-house siRNA design algorithm with customized features to improve drug design focusing on chemistry and biology.
-      - Collaborate with lab teams on assay development to ensure scalable and high-quality data analysis.
-      - Deploy AWS cloud cyberinfrastructure for scalable data analysis and data security with external partner support.
+      - Promoted within 14 months to lead strategic computational efforts and platform-wide bioinformatics initiatives.
+      - Program Leadership - Serve as the Bioinformatics Lead for multiple high-priority CNS programs (e.g., Huntington’s, Alzheimer’s), integrating multi-omic data to drive siRNA selection.
+      - di-siRNA Platform Architecture - Directed the evolution of the proprietary di-siRNA design algorithm, incorporating machine learning to optimize sequence selection for enhanced potency.
+      - Strategic Mentorship - Formally mentor junior computational scientists and interns, establishing rigorous standards for version-controlled code (Git), reproducible workflows (Nextflow/Snakemake), and technical documentation.
+      - Cross-Functional Influence - Partner with research and non-clinical development team leads to define the "Bioinformatics Package" for regulatory filings, ensuring computational off-target assessments meet high standards for CNS delivery.
+      - Operations & Infrastructure - Spearheaded the migration of primary analysis pipelines to a scalable AWS cloud environment, reducing data processing turnaround time by >50% while maintaining strict data integrity.
+      - External Collaboration - Lead bioinformatics collaborations with external partners, including generation of NGS datasets to enhance the di-siRNA platform's capabilities.
   - title: Bioinformatics Scientist
     date: Feb 2022 - Apr 2023
     desc:
