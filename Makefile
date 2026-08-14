@@ -1,7 +1,9 @@
-RUBY_BIN = /opt/homebrew/opt/ruby/bin
-BUNDLE = PATH="$(RUBY_BIN):/opt/homebrew/bin:$(PATH)" $(RUBY_BIN)/bundle
+HOMEBREW_BUNDLE := /opt/homebrew/opt/ruby/bin/bundle
+BUNDLE ?= $(shell if [ -x $(HOMEBREW_BUNDLE) ]; then echo PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:$(PATH)" $(HOMEBREW_BUNDLE); else echo bundle; fi)
 SITE = site
 RM = rm -rf
+
+.PHONY: site publish serve clean
 
 site:
 	$(BUNDLE) config set path 'vendor/bundle'
@@ -16,5 +18,3 @@ serve:
 
 clean:
 	$(RM) $(SITE)
-
-
