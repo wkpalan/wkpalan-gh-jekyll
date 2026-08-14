@@ -1,16 +1,20 @@
-SITE= site
-RM= rm -rf
+RUBY_BIN = /opt/homebrew/opt/ruby/bin
+BUNDLE = PATH="$(RUBY_BIN):/opt/homebrew/bin:$(PATH)" $(RUBY_BIN)/bundle
+SITE = site
+RM = rm -rf
 
 site:
-	bundle config set path 'vendor/bundle'
-	bundler install
-	bundler exec jekyll build -d $(SITE)
+	$(BUNDLE) config set path 'vendor/bundle'
+	$(BUNDLE) install
+	$(BUNDLE) exec jekyll build -d $(SITE)
 
 publish:
 	rsync -rluv --chown $(WWW_UID):$(WWW_GID) $(SITE)/ /var/www/bioinformapping.com/html/
 
 serve:
-	bundler exec jekyll serve -H 0.0.0.0 -P 4001 -d site --trace
+	$(BUNDLE) exec jekyll serve -H 0.0.0.0 -P 4001 -d site --trace
 
-clean :
+clean:
 	$(RM) $(SITE)
+
+

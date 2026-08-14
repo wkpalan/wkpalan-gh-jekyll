@@ -195,6 +195,13 @@ layout: default
         {% bibliography --query @misc[type=poster] %}
     </div>
 
+    <h3>Patents</h3>
+    <hr>
+    <div >
+        {% bibliography --query @misc[type=patent]|@patent %}
+    </div>
+
+
 {% capture md %}
 
 ### Awards and Fellowships
